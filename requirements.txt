@@ -1,0 +1,14 @@
+# Data handling
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+
+# Profiling and charts
+matplotlib>=3.8
+jupyter>=1.0
+
+# German public holidays (calculated field)
+holidays>=0.50
+
+# Tests
+pytest>=8.0
