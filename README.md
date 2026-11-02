@@ -31,7 +31,9 @@ Task tracking: see **[TASKS.md](TASKS.md)**.
 | Daily weather | [Deutscher Wetterdienst (DWD), Climate Data Center](https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/) | [CC BY 4.0](https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf) |
 
 **Scope:** Heidelberg + Mannheim · one year (2025) · daily values.
-**Download date:** _fill in_
+**Download date:** 2 Nov 2026 (run `python src/download.py`, log in `data/raw/download_log.json`)
+**Size:** 10,839 rows for Heidelberg + Mannheim (30 counter sites, 2025), out of 57,341 rows for all of Baden-Württemberg.
+**Weather:** DWD station 05906 Mannheim, daily values, historical file (to 31 Dec 2025) + recent file (from 1 May 2025).
 
 **Attribution:** Bicycle count data: MobiData BW / NVBW, Datenlizenz Deutschland – Namensnennung 2.0. Weather data: Deutscher Wetterdienst (DWD), CC BY 4.0.
 
@@ -57,8 +59,8 @@ Task tracking: see **[TASKS.md](TASKS.md)**.
 ## How to run
 
 ```bash
-git clone https://github.com/<your-account>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/jasmeetkaurpelia/dm-project-group-07.git
+cd dm-project-group-07
 python -m venv .venv
 # Windows: .venv\Scripts\activate   |   Mac/Linux: source .venv/bin/activate
 pip install -r requirements.txt

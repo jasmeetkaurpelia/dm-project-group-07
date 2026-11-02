@@ -15,8 +15,8 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 0.1 | Create GitHub repo, add README, TASKS, requirements | Jasmeet | ✅ | |
 | 0.2 | Invite all 4 teammates as collaborators | Jasmeet | ✅ | |
 | 0.3 | Create folders: `data/raw`, `data/processed`, `notebooks`, `src`, `tests`, `tableau`, `docs`, `slides`, `report` | Jasmeet | ✅ | |
-| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | ⬜ | |
-| 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | ⬜ | |
+| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
+| 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
 | 0.6 | Share SRH slide template in `slides/` | Jasmeet | ⬜ | |
 
 ## Phase 1 — Get the data (Day 1)
@@ -37,7 +37,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Yash | ⬜ | |
 | 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Keshav | ⬜ | |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL) | Jasmeet | ⬜ | |
-| 2.6 | **Team call (30 min):** agree on the cleaning rules → `docs/cleaning_rules.md` | Everyone | ⬜ | |
+| 2.6 | **Team call (30 min):** agree on the cleaning rules → `docs/cleaning_rules.md` | Everyone |  Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
 
 > ⚠️ Phase 3 starts only after 2.6 is done.
 
@@ -81,11 +81,11 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 | # | Task | Owner | Status | Done by (name + date) |
 |---|---|---|---|---|
-| 5.1 | Write own report section (~1.5 pages) | Everyone | ⬜ | |
+| 5.1 | Write own report section (~1.5 pages) | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
 | 5.2 | Reflection: what we could not fix + who did what | Jasmeet | ⬜ | |
 | 5.3 | Appendix: metadata record, cleaning log, data dictionary, GitHub link | Keshav | ⬜ | |
 | 5.4 | Merge and export report as PDF | Jasmeet | ⬜ | |
-| 5.5 | Upload `DM_Project_Group<Nr>.zip` to Moodle (slides, report PDF, .tflx, code, GitHub link) | Jasmeet | ⬜ | |
+| 5.5 | Upload `DM_Project_Group07.zip` to Moodle (slides, report PDF, .tflx, code, GitHub link) | Jasmeet | ⬜ | |
 
 ---
 

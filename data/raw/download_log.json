@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202501.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202501.csv.gz",
+    "bytes": 70611,
+    "sha256": "63d133b898bdd60f5b29b67ff71ec9b08529dd6c055bc4d61be6d2eec9ce4a66",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202502.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202502.csv.gz",
+    "bytes": 63359,
+    "sha256": "9c4564ea37259554e88e40b0655c4b87696b20591e024d2c7f06d60c20e369e2",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202503.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202503.csv.gz",
+    "bytes": 72140,
+    "sha256": "a47b43677b9cf960bce562555d71c7deb281e4419fac10070f3d11a3983abfa5",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202504.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202504.csv.gz",
+    "bytes": 71855,
+    "sha256": "9de7eba7b926a56837c20cb4739ccda09743fbf3f9ab43ee5ed32cddb65f3e0e",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202505.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202505.csv.gz",
+    "bytes": 75129,
+    "sha256": "6f70a122ef951b2b2e772bd631689c91f81aee79697052ae98ee95dc7998e03a",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202506.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202506.csv.gz",
+    "bytes": 73477,
+    "sha256": "85446911ef116c8b9d2f9a4f32a73d08a2e8d5ebb4365c62035cb1aeada99179",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202507.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202507.csv.gz",
+    "bytes": 76312,
+    "sha256": "1b1f1e0ab5a38b7e67037b3ee3c0a19afe29ee8fbde5f5d753a858ec9b33e7a6",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202508.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202508.csv.gz",
+    "bytes": 75267,
+    "sha256": "28e12c0469b5c78c160624d94c87db2ad1a2dab63f604989a80b22c4e05359de",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202509.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202509.csv.gz",
+    "bytes": 74723,
+    "sha256": "38105cdfee6e74a560408de2f65199bbad815423694378893634dec777bcda7b",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202510.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202510.csv.gz",
+    "bytes": 73700,
+    "sha256": "7a065b4e8a9a292f9d662bae0aeddea9077a5d963849629c2bf9fe5df6af9e84",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202511.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202511.csv.gz",
+    "bytes": 69950,
+    "sha256": "61b79f80a4698143355da2aef2cdcb999500890073bbf869ff0a9a80504e53ba",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202512.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202512.csv.gz",
+    "bytes": 67591,
+    "sha256": "0660ac61324ed3e5c8894ba490c0c55b38bd8f6de62dd297dc52dc2d8dcb40cc",
+    "downloaded_at": "2026-11-02T11:30:44+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/recent/KL_Tageswerte_Beschreibung_Stationen.txt",
+    "file": "data/raw/weather/KL_Tageswerte_Beschreibung_Stationen.txt",
+    "bytes": 1388997,
+    "sha256": "04005f3c509f1e90fccb8011746f2fabea93997810dab614ab95c16a0742bb86",
+    "downloaded_at": "2026-11-02T11:30:45+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/tageswerte_KL_05906_17810101_20251231_hist.zip",
+    "file": "data/raw/weather/tageswerte_KL_05906_17810101_20251231_hist.zip",
+    "bytes": 812768,
+    "sha256": "d7fd8a1ca6f2e033c402a970c5f647e542a9432b4a63880050acd530a4b328d7",
+    "downloaded_at": "2026-11-02T11:30:45+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/recent/tageswerte_KL_05906_akt.zip",
+    "file": "data/raw/weather/tageswerte_KL_05906_akt.zip",
+    "bytes": 45405,
+    "sha256": "8a90f74514b0806a73d1a0b93fa7e15ea6b77dfd876fa15b08ea50903abc16c6",
+    "downloaded_at": "2026-11-02T11:30:45+00:00"
+  }
+]
