@@ -240,7 +240,7 @@ def add_calendar_features(df):
     out = df.copy()
     bw = holidays.Germany(subdiv="BW", years=sorted(out["date"].dt.year.unique()))
     out["weekday"] = out["date"].dt.day_name()
-    out["is_weekend"] = out["date"].dt.dayofweek >= 5
+    out["is_weekend"] = out["date"].dt.day_of_week >= 5
     out["is_holiday"] = out["date"].dt.date.map(lambda d: d in bw)
     out["month"] = out["date"].dt.month
     return out
