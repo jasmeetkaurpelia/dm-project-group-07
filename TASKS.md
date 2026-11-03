@@ -15,8 +15,8 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 0.1 | Create GitHub repo, add README, TASKS, requirements                                                              | Jasmeet  | ✅                                                    |                       |
 | 0.2 | Invite all 4 teammates as collaborators                                                                          | Jasmeet  | ✅                                                    |                       |
 | 0.3 | Create folders: `data/raw`, `data/processed`, `notebooks`, `src`, `tests`, `tableau`, `docs`, `slides`, `report` | Jasmeet  | ✅                                                    |                       |
-| 0.4 | Clone repo + `pip install -r requirements.txt`                                                                   | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ⬜, Keshav ⬜ |     |
-| 0.5 | Install Tableau Prep Builder (free student licence)                                                              | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ⬜, Keshav ⬜ |                      |
+| 0.4 | Clone repo + `pip install -r requirements.txt`                                                                   | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ |             |
+| 0.5 | Install Tableau Prep Builder (free student licence)                                                              | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ |                    |
 | 0.6 | Share SRH slide template in `slides/`                                                                            | Jasmeet  | ⬜                                                    |                       |
 
 ## Phase 1 — Get the data (Day 1)
