@@ -21,20 +21,20 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 ## Phase 1 — Get the data (Day 1)
 
-| #   | Task                                                                                                               | Owner   | Status | Done by (name + date) |
-| --- | ------------------------------------------------------------------------------------------------------------------ | ------- | ------ | --------------------- |
-| 1.1 | Write `src/download.py`: download 12 monthly files for 2025 (`fahrradzaehler_tageswerten_2025MM.csv.gz`) and unzip | Jasmeet | ⬜     |                       |
-| 1.2 | Find the Mannheim station ID in the DWD station list and download its daily `kl` file                              | Jasmeet | ⬜     |                       |
-| 1.3 | Check rows for Heidelberg + Mannheim (must be ≥ 1,000) and write the number in the README                          | Jasmeet | ⬜     |                       |
-| 1.4 | Write the download date + file names in the README                                                                 | Jasmeet | ⬜     |                       |
+| # | Task | Owner | Status | Done by (name + date) |
+|---|---|---|---|---|
+| 1.1 | Write `src/download.py`: download 12 monthly files for 2025 (`fahrradzaehler_tageswerten_2025MM.csv.gz`) and unzip | Jasmeet | ✅ | |
+| 1.2 | Find the Mannheim station ID in the DWD station list and download its daily `kl` file | Jasmeet | ✅ | |
+| 1.3 | Check rows for Heidelberg + Mannheim (must be ≥ 1,000) and write the number in the README | Jasmeet | ✅ | |
+| 1.4 | Write the download date + file names in the README | Jasmeet | ✅ | |
 
 ## Phase 2 — Understand the data (Day 2)
 
 | #   | Task                                                                                                                 | Owner    | Status                                                | Done by (name + date) |
 | --- | -------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------- | --------------------- |
-| 2.1 | Profiling notebook: rows, columns, data types, % missing, duplicates, min/max                                        | Yash     | ⬜                                                    |                       |
-| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Yash     | ⬜                                                    |                       |
-| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency)                             | Yash     | ⬜                                                    |                       |
+| 2.1 | Profiling notebook: rows, columns, data types, % missing, duplicates, min/max                                        | Jasmeet     | ✅                                                    |                       |
+| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet     | ✅                                                    |                       |
+| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency)                             | Jasmeet     | ✅                                                    |                       |
 | 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md`                                  | Keshav   | ⬜                                                    |                       |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL)                               | Jasmeet  | ⬜                                                    |                       |
 | 2.6 | **Team call (30 min):** agree on the cleaning rules → `docs/cleaning_rules.md`                                       | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ |                       |
