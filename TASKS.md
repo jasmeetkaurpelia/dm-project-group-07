@@ -32,10 +32,10 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 | #   | Task                                                                                                                 | Owner    | Status                                                | Done by (name + date) |
 | --- | -------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------- | --------------------- |
-| 2.1 | Profiling notebook: rows, columns, data types, % missing, duplicates, min/max                                        | Jasmeet     | ✅                                                    |                       |
-| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet     | ✅                                                    |                       |
-| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency)                             | Jasmeet     | ✅                                                    |                       |
-| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md`                                  | Keshav   | ⬜                                                    |                       |
+| 2.1 | Profiling notebook: rows, columns, data types, % missing, duplicates, min/max | Team-up | Jasmeet ✅ Yash ⬜ | |
+| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Team-up | Jasmeet ✅ Yash ⬜ | |
+| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Team-up | Jasmeet ✅ Yash ⬜ | |
+| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md`| Team-up | Jasmeet ✅ Keshav ⬜ | |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL)                               | Jasmeet  | ⬜                                                    |                       |
 | 2.6 | **Team call (30 min):** agree on the cleaning rules → `docs/cleaning_rules.md`                                       | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ |                       |
 
