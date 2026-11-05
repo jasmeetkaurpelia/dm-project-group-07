@@ -101,3 +101,4 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3 Nov | Jasmeet | Draft FAIR score in `docs/fair_score.md` (18/30 original). Keshav: please review the scores |
 | 3 Nov | Jasmeet | Draft `src/cleaning.py`, `tests/test_cleaning.py` and `docs/cleaning_rules.md` uploaded early. Shashank: please review and run `pytest` after 2.6 is agreed |
 | 5 Nov | Keshav | FAIR review done (18/30 confirmed). New: `docs/data_dictionary.md`, `docs/metadata.json`, `docs/governance.md` (PR #1). Yash: ready to do 3.15 together | 
+| 5 Nov | Jasmeet | Merged PR #1 (Keshav: FAIR review, data dictionary, metadata, governance). His review found a bug: weekly total showed 0 instead of NULL; fixed in `cleaning.py`, 10 tests pass |

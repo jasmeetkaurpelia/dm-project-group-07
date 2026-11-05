@@ -44,7 +44,7 @@ Source of each rule: issues found in `docs/profiling_report.md`.
 |---|---|---|---|
 | J1 | daily_counts **left join** sites on `site_id`, then **left join** weather on `date` (rows must not change) | `build_model_table` | **Join steps** (left), check row count stays the same |
 | J2 | Calendar features: `weekday`, `is_weekend`, `is_holiday` (Baden-Württemberg public holidays), `month` | `add_calendar_features` | **Clean step** calcs: `DATENAME('weekday',[date])`, `DATEPART('weekday',[date]) IN (1,7)`; holidays via a small holiday CSV joined on date |
-| J3 | Weekly totals per site (sum of counts, number of valid days, mean temperature, total rain) | `aggregate_weekly` | **Aggregate step** by `site_id`, ISO week |
+| J3 | Weekly totals per site (sum of counts, number of valid days, mean temperature, total rain); **total is NULL if no valid day** | `aggregate_weekly` | **Aggregate step** by `site_id`, ISO week |
 
 ## Script step for B7 + B8 (Tableau Prep)
 
@@ -77,3 +77,4 @@ def get_output_schema():
 | Date | Who | Change |
 |---|---|---|
 | 3 Nov 2026 | Jasmeet | First version, from profiling report |
+| 5 Nov 2026 | Keshav (found), Jasmeet (fixed) | J3: weekly `bikes_total` is NULL when `valid_days` = 0 (was 0). Found in governance review, test added |
