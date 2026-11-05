@@ -258,10 +258,13 @@ def aggregate_weekly(model):
     m = model.copy()
     iso = m["date"].dt.isocalendar()
     m["iso_year"], m["iso_week"] = iso["year"], iso["week"]
-    return (m.groupby(["site_id", "site_name", "city", "iso_year", "iso_week"])
-              .agg(bikes_total=("bikes_total", "sum"), valid_days=("bikes_total", "count"),
-                   temp_mean_c=("temp_mean_c", "mean"), precip_mm=("precip_mm", "sum"))
-              .round(2).reset_index())
+    weekly = (m.groupby(["site_id", "site_name", "city", "iso_year", "iso_week"])
+                .agg(bikes_total=("bikes_total", lambda s: s.sum(min_count=1)),   # no valid day -> NULL, not 0
+                     valid_days=("bikes_total", "count"),
+                     temp_mean_c=("temp_mean_c", "mean"), precip_mm=("precip_mm", "sum"))
+                .round(2).reset_index())
+    weekly["bikes_total"] = weekly["bikes_total"].astype("Int64")
+    return weekly
 
 
 # ================================================================ pipeline
