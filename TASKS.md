@@ -18,7 +18,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 0.1 | Create GitHub repo, add README, TASKS, requirements | Jasmeet | ✅ | 2 Nov |
 | 0.2 | Invite all 4 teammates as collaborators | Jasmeet | ✅ | 2 Nov |
 | 0.3 | Create folders: `data/raw`, `data/processed`, `notebooks`, `src`, `tests`, `tableau`, `docs`, `slides`, `report` | Jasmeet | ✅ | 2 Nov |
-| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ | |
+| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ✅ | |
 | 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ | |
 | 0.6 | Share SRH slide template in `slides/` | Jasmeet | ✅ | |
 
@@ -38,9 +38,9 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 2.1 | Profiling: rows, columns, data types, % missing, duplicates, min/max (`src/profiling.py`) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
 | 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
 | 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
-| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ⬜ | |
+| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ✅ |5 Nov |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL) → `docs/architecture.png` | Jasmeet | ✅ | 3 Nov |
-| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
+| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ✅ | |
 
 > ⚠️ Phase 3 starts only after 2.6 is done.
 
