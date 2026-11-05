@@ -58,9 +58,9 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.8 | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates) | Shashank | 🔄 draft by Jasmeet, Shashank to run | |
 | 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ⬜ | |
 | 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | ⬜ | |
-| 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ⬜ | |
-| 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ⬜ | |
-| 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ⬜ | |
+| 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ✅ | 5 Nov |
+| 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
+| 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
 | 3.14 | Cleaning log → `docs/cleaning_log_2025.md` (written by `cleaning.py`) | Vivek + Shashank | ⬜ | |
 | 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Yash + Keshav | ⬜ | |
 
@@ -100,3 +100,4 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3 Nov | Jasmeet | Profiling report in `docs/profiling_report.md`. Yash: please review and add your findings |
 | 3 Nov | Jasmeet | Draft FAIR score in `docs/fair_score.md` (18/30 original). Keshav: please review the scores |
 | 3 Nov | Jasmeet | Draft `src/cleaning.py`, `tests/test_cleaning.py` and `docs/cleaning_rules.md` uploaded early. Shashank: please review and run `pytest` after 2.6 is agreed |
+| 5 Nov | Keshav | FAIR review done (18/30 confirmed). New: `docs/data_dictionary.md`, `docs/metadata.json`, `docs/governance.md` (PR #1). Yash: ready to do 3.15 together | 
