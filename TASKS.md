@@ -18,7 +18,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 0.1 | Create GitHub repo, add README, TASKS, requirements | Jasmeet | ✅ | 2 Nov |
 | 0.2 | Invite all 4 teammates as collaborators | Jasmeet | ✅ | 2 Nov |
 | 0.3 | Create folders: `data/raw`, `data/processed`, `notebooks`, `src`, `tests`, `tableau`, `docs`, `slides`, `report` | Jasmeet | ✅ | 2 Nov |
-| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ | |
+| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ✅ | |
 | 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ⬜ | |
 | 0.6 | Share SRH slide template in `slides/` | Jasmeet | ✅ | |
 
@@ -38,9 +38,9 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 2.1 | Profiling: rows, columns, data types, % missing, duplicates, min/max (`src/profiling.py`) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
 | 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
 | 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
-| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ⬜ | |
+| 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ✅ |5 Nov |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL) → `docs/architecture.png` | Jasmeet | ✅ | 3 Nov |
-| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
+| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ✅ | |
 
 > ⚠️ Phase 3 starts only after 2.6 is done.
 
@@ -58,9 +58,9 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.8 | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates) | Shashank | 🔄 draft by Jasmeet, Shashank to run | |
 | 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ⬜ | |
 | 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | ⬜ | |
-| 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ⬜ | |
-| 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ⬜ | |
-| 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ⬜ | |
+| 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ✅ | 5 Nov |
+| 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
+| 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
 | 3.14 | Cleaning log → `docs/cleaning_log_2025.md` (written by `cleaning.py`) | Vivek + Shashank | ⬜ | |
 | 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Yash + Keshav | ⬜ | |
 
@@ -100,3 +100,4 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3 Nov | Jasmeet | Profiling report in `docs/profiling_report.md`. Yash: please review and add your findings |
 | 3 Nov | Jasmeet | Draft FAIR score in `docs/fair_score.md` (18/30 original). Keshav: please review the scores |
 | 3 Nov | Jasmeet | Draft `src/cleaning.py`, `tests/test_cleaning.py` and `docs/cleaning_rules.md` uploaded early. Shashank: please review and run `pytest` after 2.6 is agreed |
+| 5 Nov | Keshav | FAIR review done (18/30 confirmed). New: `docs/data_dictionary.md`, `docs/metadata.json`, `docs/governance.md` (PR #1). Yash: ready to do 3.15 together | 

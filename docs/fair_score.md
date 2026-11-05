@@ -1,6 +1,6 @@
 # FAIR score
 
-Scored by: Jasmeet Kaur · 3 Nov 2026 · Method: the 15 FAIR sub-principles ([GO FAIR](https://www.go-fair.org/fair-principles/)), each scored **0 = not met, 1 = partly met, 2 = fully met**. Maximum 30 points.
+Scored by: Jasmeet Kaur · 3 Nov 2026  · Reviewed by: Keshav Sain · 5 Nov 2026 · Method: the 15 FAIR sub-principles ([GO FAIR](https://www.go-fair.org/fair-principles/)), each scored **0 = not met, 1 = partly met, 2 = fully met**. Maximum 30 points.
 
 Scored dataset: **MobiData BW — Gebündelte Daten Eco-Counter Fahrradzählstellen Baden-Württemberg** (bike counts, main table).
 Evidence from the [dataset page](https://mobidata-bw.de/en/dataset/eco-counter-fahrradzahler), checked 2 Nov 2026.
