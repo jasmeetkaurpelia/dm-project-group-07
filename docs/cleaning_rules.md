@@ -28,7 +28,7 @@ Source of each rule: issues found in `docs/profiling_report.md`.
 | B7 | ≥ 3 zero days in a row = sensor outage → count NULL + flag `is_outage`; single zero days kept + flag `is_zero` | Zero-count days | changes values + flag | `flag_outages` | **Script step** calling the Python function (see below) |
 | B8 | Flag outliers above Q3 + 3 × IQR per site; value kept | Extreme days (events, errors) | flag only | `flag_outliers` | **Script step** (same script) |
 | B9 | Add missing days inside each site's active period (first → last date) with NULL count + flag `is_missing` | Missing site-days | adds rows | `complete_calendar` | **New Rows step** on `date`, grouped by `site_id` (or Script step) |
-| B10 | Split into **sites** (one row per site, median lat/long) and **daily_counts** (site + day) | Need two related tables, one fixed location per site | restructure | `split_tables` | **Aggregate step** by `site_id` → sites output; second branch → daily_counts output |
+| B10 | Split into **sites** (one row per site, median lat/long rounded to 6 decimals) and **daily_counts** (site + day) | Need two related tables, one fixed location per site | restructure | `split_tables` | **Aggregate step** by `site_id` → sites output; second branch → daily_counts output |
 
 ## Weather (DWD Mannheim, station 05906)
 
@@ -78,3 +78,4 @@ def get_output_schema():
 |---|---|---|
 | 3 Nov 2026 | Jasmeet | First version, from profiling report |
 | 5 Nov 2026 | Keshav (found), Jasmeet (fixed) | J3: weekly `bikes_total` is NULL when `valid_days` = 0 (was 0). Found in governance review, test added |
+| 7 Nov 2026 | Jasmeet | B10: site coordinates rounded to 6 decimals (~10 cm) so the output is identical on every computer |
