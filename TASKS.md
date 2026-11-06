@@ -40,7 +40,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
 | 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ✅ |5 Nov |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL) → `docs/architecture.png` | Jasmeet | ✅ | 3 Nov |
-| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ✅ | |
+| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ⬜, Keshav ✅ |  |
 
 > ⚠️ Phase 3 starts only after 2.6 is done.
 
@@ -48,16 +48,16 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 | # | Task | Owner | Status | Date |
 |---|---|---|---|---|
-| 3.1 | Tableau Prep: input + union of 12 months | Vivek | ⬜ | |
-| 3.2 | Tableau Prep: clean steps (types, filter HD + MA, fix -999, duplicates, outage days) | Vivek | ⬜ | |
-| 3.3 | Tableau Prep: split into sites table + daily counts table, join weather on date | Vivek | ⬜ | |
-| 3.4 | Tableau Prep: calculated fields (weekday, weekend, holiday, rain yes/no) | Vivek | ⬜ | |
-| 3.5 | Tableau Prep: aggregate (per site per week) + output, note rows before → after per step | Vivek | ⬜ | |
+| 3.1 | Tableau Prep: input + union of 12 months | Vivek | ✅ | 6 Nov |
+| 3.2 | Tableau Prep: clean steps (types, filter HD + MA, fix -999, duplicates, outage days) | Vivek | ✅ | 6 Nov |
+| 3.3 | Tableau Prep: split into sites table + daily counts table, join weather on date | Vivek | ✅ | 6 Nov |
+| 3.4 | Tableau Prep: calculated fields (weekday, weekend, holiday, rain yes/no) | Vivek | ✅ | 6 Nov |
+| 3.5 | Tableau Prep: aggregate (per site per week) + output, note rows before → after per step | Vivek | ✅ | 6 Nov |
 | 3.6 | Python: one function per cleaning rule in `src/cleaning.py` | Shashank | 🔄 draft by Jasmeet, Shashank to review | |
 | 3.7 | Python: `run_pipeline()` that calls all functions in order | Shashank | 🔄 draft by Jasmeet, Shashank to review | |
 | 3.8 | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates) | Shashank | 🔄 draft by Jasmeet, Shashank to run | |
 | 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ⬜ | |
-| 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | ⬜ | |
+| 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | 🔄 B1–B8 match Python; B9, weekly and sites/weather tables still differ |  |
 | 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ✅ | 5 Nov |
 | 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
 | 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
@@ -104,3 +104,5 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 5 Nov | Jasmeet | Merged PR #1 (Keshav: FAIR review, data dictionary, metadata, governance). His review found a bug: weekly total showed 0 instead of NULL; fixed in `cleaning.py`, 10 tests pass |
 | 5 Nov | Jasmeet | Quality KPIs before vs after ready (`docs/quality_before_after.md`). Yash: please review |
 | 6 Nov | Keshav  | FAIR after cleaning: 27/30 (90 %), up from 18/30; 29/30 only with a Zenodo DOI (F1, F4). Updated data dictionary, metadata (new weekly checksum) and governance for the J3 weekly NULL fix |
+| 6 Nov | Jasmeet | Merged PR #3 + #4 (Keshav: FAIR after 27/30, J3 docs, slides) and PR #2 (Vivek: Tableau Prep flow, TabPy Script step) |
+| 6 Nov | Jasmeet | Check 3.10, Tableau vs Python: match on 10,839 rows, 30 sites, 77 outages, 20 single zero days, 10 outliers. Still different: B9 missing days not added (10,839 vs 10,874), weekly 1,577 vs 1,580 rows without valid_days, no separate sites/weather outputs. Vivek: follow-up PR |
