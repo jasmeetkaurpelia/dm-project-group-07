@@ -51,9 +51,9 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | ---- | ---------------------------------------------------------------------------------------- | ---------------- | --------------------------------------- | ---- |
 | 3.1  | Tableau Prep: input + union of 12 months                                                 | Vivek            | ✅                                      |      |
 | 3.2  | Tableau Prep: clean steps (types, filter HD + MA, fix -999, duplicates, outage days)     | Vivek            | ✅                                      |      |
-| 3.3  | Tableau Prep: split into sites table + daily counts table, join weather on date          | Vivek            | ⬜                                      |      |
-| 3.4  | Tableau Prep: calculated fields (weekday, weekend, holiday, rain yes/no)                 | Vivek            | ⬜                                      |      |
-| 3.5  | Tableau Prep: aggregate (per site per week) + output, note rows before → after per step  | Vivek            | ⬜                                      |      |
+| 3.3  | Tableau Prep: split into sites table + daily counts table, join weather on date          | Vivek            | ✅                                      |      |
+| 3.4  | Tableau Prep: calculated fields (weekday, weekend, holiday, rain yes/no)                 | Vivek            | ✅                                      |      |
+| 3.5  | Tableau Prep: aggregate (per site per week) + output, note rows before → after per step  | Vivek            | ✅                                      |      |
 | 3.6  | Python: one function per cleaning rule in `src/cleaning.py`                              | Shashank         | 🔄 draft by Jasmeet, Shashank to review |      |
 | 3.7  | Python: `run_pipeline()` that calls all functions in order                               | Shashank         | 🔄 draft by Jasmeet, Shashank to review |      |
 | 3.8  | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates)          | Shashank         | 🔄 draft by Jasmeet, Shashank to run    |      |
