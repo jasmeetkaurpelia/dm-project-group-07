@@ -62,7 +62,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
 | 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
 | 3.14 | Cleaning log → `docs/cleaning_log_2025.md` (written by `cleaning.py`) | Vivek + Shashank | ⬜ | |
-| 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Jasmeet · review: Yash + Keshav  | Jasmeet ✅ (`docs/quality_before_after.md`): Yash review ⬜, Keshav ⬜ (FAIR after)| |
+| 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Jasmeet · review: Yash + Keshav  | Jasmeet ✅ (`docs/quality_before_after.md`): Yash review ⬜, Keshav ✅ (FAIR after)| |
 
 ## Phase 4 — Presentation (Day 5–7)
 
@@ -100,6 +100,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3 Nov | Jasmeet | Profiling report in `docs/profiling_report.md`. Yash: please review and add your findings |
 | 3 Nov | Jasmeet | Draft FAIR score in `docs/fair_score.md` (18/30 original). Keshav: please review the scores |
 | 3 Nov | Jasmeet | Draft `src/cleaning.py`, `tests/test_cleaning.py` and `docs/cleaning_rules.md` uploaded early. Shashank: please review and run `pytest` after 2.6 is agreed |
-| 5 Nov | Keshav | FAIR review done (18/30 confirmed). New: `docs/data_dictionary.md`, `docs/metadata.json`, `docs/governance.md` (PR #1). Yash: ready to do 3.15 together | 
+| 5 Nov | Keshav  | FAIR review done (18/30 confirmed). New: `docs/data_dictionary.md`, `docs/metadata.json`, `docs/governance.md` (PR #1). Yash: ready to do 3.15 together | 
 | 5 Nov | Jasmeet | Merged PR #1 (Keshav: FAIR review, data dictionary, metadata, governance). His review found a bug: weekly total showed 0 instead of NULL; fixed in `cleaning.py`, 10 tests pass |
 | 5 Nov | Jasmeet | Quality KPIs before vs after ready (`docs/quality_before_after.md`). Yash: please review |
+| 6 Nov | Keshav  | FAIR after cleaning: 27/30 (90 %), up from 18/30; 29/30 only with a Zenodo DOI (F1, F4). Updated data dictionary, metadata (new weekly checksum) and governance for the J3 weekly NULL fix |
