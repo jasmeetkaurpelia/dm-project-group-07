@@ -3,9 +3,6 @@ import sys
 from pathlib import Path
 import pandas as pd
 
-# ---------------------------------------------------------------------------
-# Path resolution to locate src/cleaning.py
-# ---------------------------------------------------------------------------
 current_dir = Path(__file__).resolve().parent
 repo_root = None
 
@@ -25,18 +22,14 @@ else:
 
 import cleaning as c
 
-# ---------------------------------------------------------------------------
 # Fallback stubs for linter
-# ---------------------------------------------------------------------------
 if "prep_string" not in globals():
     def prep_string(): return ["prep_string_type"]
     def prep_decimal(): return ["prep_decimal_type"]
     def prep_bool(): return ["prep_bool_type"]
 
 
-# ---------------------------------------------------------------------------
 # Tableau Prep Step Function (Rules B7 & B8)
-# ---------------------------------------------------------------------------
 def flag_rules(df: pd.DataFrame) -> pd.DataFrame:
     # 1. Clean incoming date string (strip trailing 'Z')
     if "date" in df.columns:
@@ -77,10 +70,7 @@ def flag_rules(df: pd.DataFrame) -> pd.DataFrame:
     ]
     return out[schema_cols]
 
-
-# ---------------------------------------------------------------------------
 # Output Schema (date returned as prep_string to match JSON serialization)
-# ---------------------------------------------------------------------------
 def get_output_schema():
     return pd.DataFrame({
         "site_id": prep_string(),
