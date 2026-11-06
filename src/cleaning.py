@@ -200,6 +200,7 @@ def split_tables(df):
                     counter_serial=("counter_serial", "first"),
                     first_date=("date", "min"), last_date=("date", "max"))
                .reset_index())
+    sites[["latitude", "longitude"]] = sites[["latitude", "longitude"]].round(6)   # ~10 cm; same digits on every machine
     counts = df[["site_id", "date", "bikes_in", "bikes_out", "bikes_total",
                  "is_missing", "is_outage", "is_zero", "is_outlier"]].copy()
     for c in ["bikes_in", "bikes_out", "bikes_total"]:
