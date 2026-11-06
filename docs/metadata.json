@@ -2,7 +2,7 @@
   "title": "Bike counts and weather, Heidelberg and Mannheim, 2025 (cleaned, AI-ready)",
   "description": "Daily bicycle counts from 30 Eco-Counter sites in Heidelberg and Mannheim for 2025, cleaned and joined with daily weather from DWD station 05906 Mannheim and calendar features (weekday, weekend, Baden-Wuerttemberg public holidays). Missing days and sensor outages are kept as NULL with flags, never as 0. Built for analysing and forecasting daily bike traffic.",
   "identifier": "https://github.com/jasmeetkaurpelia/dm-project-group-07",
-  "version": "1.0 (2025 data)",
+  "version": "1.1 (2025 data, weekly NULL fix)",
   "language": "en",
   "keywords": [
     "bicycle traffic",
@@ -25,7 +25,7 @@
       "lat_min": 49.3886,
       "lat_max": 49.5144,
       "lon_min": 8.4566,
-      "lon_max": 8.7260
+      "lon_max": 8.726
     }
   },
   "temporal": {
@@ -78,7 +78,8 @@
     "cleaning_log": "docs/cleaning_log_2025.md (rows before and after each step)",
     "tableau_flow": "tableau/flow.tflx",
     "rows_raw_heidelberg_mannheim": 10839,
-    "rows_raw_all_baden_wuerttemberg": 57341
+    "rows_raw_all_baden_wuerttemberg": 57341,
+    "quality_before_after": "docs/quality_before_after.md"
   },
   "documentation": {
     "data_dictionary": "docs/data_dictionary.md",
@@ -92,7 +93,9 @@
       "encoding": "UTF-8",
       "rows": 30,
       "columns": 8,
-      "primary_key": ["site_id"],
+      "primary_key": [
+        "site_id"
+      ],
       "sha256_first16": "ef0f74dc5afa09ac"
     },
     {
@@ -101,8 +104,13 @@
       "encoding": "UTF-8",
       "rows": 10874,
       "columns": 9,
-      "primary_key": ["site_id", "date"],
-      "foreign_keys": {"site_id": "sites.site_id"},
+      "primary_key": [
+        "site_id",
+        "date"
+      ],
+      "foreign_keys": {
+        "site_id": "sites.site_id"
+      },
       "sha256_first16": "ff85c432220b691e"
     },
     {
@@ -111,7 +119,9 @@
       "encoding": "UTF-8",
       "rows": 365,
       "columns": 10,
-      "primary_key": ["date"],
+      "primary_key": [
+        "date"
+      ],
       "sha256_first16": "365d6873918696d4"
     },
     {
@@ -120,7 +130,10 @@
       "encoding": "UTF-8",
       "rows": 10874,
       "columns": 24,
-      "primary_key": ["site_id", "date"],
+      "primary_key": [
+        "site_id",
+        "date"
+      ],
       "sha256_first16": "b9e65e3dbe397c5d"
     },
     {
@@ -129,8 +142,12 @@
       "encoding": "UTF-8",
       "rows": 1580,
       "columns": 9,
-      "primary_key": ["site_id", "iso_year", "iso_week"],
-      "sha256_first16": "20e75b2518726312"
+      "primary_key": [
+        "site_id",
+        "iso_year",
+        "iso_week"
+      ],
+      "sha256_first16": "a720b92a5bad59a7"
     }
   ],
   "quality_after_cleaning": {
@@ -144,7 +161,7 @@
   "known_limitations": [
     "Weather is from one station (Mannheim) and is also used for Heidelberg.",
     "bikes_in and bikes_out are empty for 2 sites that only report a total.",
-    "In weekly_counts.csv a week with valid_days = 0 shows bikes_total 0, which means unknown.",
-    "The counter operator can change the counter setup without notice."
+    "The counter operator can change the counter setup without notice.",
+    "In weekly_counts.csv use valid_days to judge partial weeks (bikes_total is NULL when valid_days = 0)."
   ]
 }

@@ -78,7 +78,7 @@ Attribution text (README, slides, report): *Bicycle count data: MobiData BW / NV
 | # | Risk | Why it matters for a model | What we did / recommend |
 |---|---|---|---|
 | 1 | **Missing data read as zero** | A model would learn "no bikes" on days the sensor was off | 35 missing days and 77 outage days are NULL with flags `is_missing`, `is_outage`. Users must drop or mask them. |
-| 2 | **Weekly total of 0 that means "unknown"** | 10 weeks in `weekly_counts.csv` have `valid_days` = 0 and show `bikes_total` = 0 | Use `valid_days`; ignore weeks with 0 valid days. Possible fix: write NULL instead of 0 (future work). |
+| 2 | **Weekly total of 0 that meant "unknown"** | 10 weeks in `weekly_counts.csv` have `valid_days` = 0; they showed `bikes_total` = 0 | **Fixed 5 Nov:** found in this review, rule J3 changed, total is now NULL; a test checks it. Still use `valid_days` to judge partial weeks. |
 | 3 | **Outliers** | 10 extreme days (events or sensor errors) can distort training | Flagged `is_outlier`, value kept. The user decides: keep for events, remove for "normal day" models. |
 | 4 | **One weather station for two cities** | Heidelberg weather may differ from Mannheim (about 20 km) | Documented in metadata. Possible improvement: add a Heidelberg station. |
 | 5 | **Short history (one year)** | Only one winter and one summer; seasonal effects are weakly learned | Train on 2025, test on 2026 data (pipeline can re-run on a new month, task 3.9). |

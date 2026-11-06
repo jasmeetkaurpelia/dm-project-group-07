@@ -7,13 +7,15 @@ Evidence from the [dataset page](https://mobidata-bw.de/en/dataset/eco-counter-f
 
 ## Summary
 
-| | Original dataset | Our data product (target) |
-|---|---|---|
-| Findable | 6 / 8 | 8 / 8 |
-| Accessible | 7 / 8 | 8 / 8 |
-| Interoperable | 2 / 6 | 6 / 6 |
-| Reusable | 3 / 8 | 7 / 8 |
-| **Total** | **18 / 30 (60 %)** | **29 / 30 (97 %)** |
+| | Original dataset | Our data product (after cleaning, 6 Nov) | With a Zenodo DOI (optional) |
+|---|---|---|---|
+| Findable | 6 / 8 | 6 / 8 | 8 / 8 |
+| Accessible | 7 / 8 | 8 / 8 | 8 / 8 |
+| Interoperable | 2 / 6 | 6 / 6 | 6 / 6 |
+| Reusable | 3 / 8 | 7 / 8 | 7 / 8 |
+| **Total** | **18 / 30 (60 %)** | **27 / 30 (90 %)** | **29 / 30 (97 %)** |
+
+After-cleaning score by Keshav Sain, 6 Nov 2026 (task 3.15), checked against the files now in the repo.
 
 **Main finding:** the data is easy to find and download (F and A are strong). It is hard to reuse correctly (I and R are weak): every column is text, there are no descriptions or units, and nothing links the data to other datasets.
 
@@ -21,10 +23,10 @@ Evidence from the [dataset page](https://mobidata-bw.de/en/dataset/eco-counter-f
 
 | Principle | Question | Original | Evidence (original) | Ours | What we did |
 |---|---|---|---|---|---|
-| F1 | Unique, persistent identifier? | 1 | Portal ID (UUID) and URL, but no DOI | 2 | DOI via Zenodo release of the GitHub repo *(to do — else 1)* |
+| F1 | Unique, persistent identifier? | 1 | Portal ID (UUID) and URL, but no DOI | 1 | GitHub URL only; a DOI via a Zenodo release would make it 2 |
 | F2 | Rich metadata? | 1 | Title, description, author, maintainer, tags, spatial area, licence; no column descriptions | 2 | `docs/metadata.json` + data dictionary |
 | F3 | Metadata names the data's identifier? | 2 | Each resource has its own URL and ID in the metadata | 2 | File names + checksums in metadata and logs |
-| F4 | Registered in a searchable resource? | 2 | Harvested into GovData; tagged for Mobilithek | 2 | GitHub + Zenodo *(to do)* |
+| F4 | Registered in a searchable resource? | 2 | Harvested into GovData; tagged for Mobilithek | 1 | Public GitHub repo, not yet in a data registry; Zenodo would make it 2 |
 | A1 | Retrievable by its identifier with a standard protocol? | 2 | HTTPS download, CKAN API | 2 | HTTPS (GitHub) |
 | A1.1 | Protocol open and free? | 2 | HTTPS, no fee | 2 | HTTPS |
 | A1.2 | Authentication where needed? | 2 | Not needed: no registration | 2 | Not needed |
@@ -43,6 +45,6 @@ Strong on F, A and R: CC BY 4.0, station description file, quality flags (QN), a
 
 ## To reach the "ours" score
 
-- [ ] Write `docs/metadata.json` (task 3.12)
-- [ ] Write `docs/data_dictionary.md` (task 3.11)
+- [x] Write `docs/metadata.json` (task 3.12)
+- [x] Write `docs/data_dictionary.md` (task 3.11)
 - [ ] Optional: GitHub → Zenodo release for a DOI (F1, F4)

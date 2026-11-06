@@ -80,7 +80,7 @@ Primary key: `site_id` + `iso_year` + `iso_week` (rule J3).
 | `site_id`, `site_name`, `city` | – | See `sites.csv` | – | 100012161, Plöck, Heidelberg |
 | `iso_year` | whole number | ISO year of the week. 29–31 Dec 2025 belong to ISO week 1 of **2026** | – | 2025 |
 | `iso_week` | whole number | ISO week number (1–52) | – | 1 |
-| `bikes_total` | whole number | Sum of valid daily counts in the week (NULL days are skipped). **If `valid_days` = 0 the total shows 0 but means "unknown"** | bikes per week | 7181 |
+| `bikes_total` | whole number | Sum of valid daily counts in the week (NULL days are skipped). **NULL if `valid_days` = 0** (rule J3, fixed 5 Nov) | bikes per week | 7181 |
 | `valid_days` | whole number | Number of days with a valid count (0–7). Use it to judge a weekly total | days | 5 |
 | `temp_mean_c` | decimal | Mean of the daily mean temperatures | °C | 2.88 |
 | `precip_mm` | decimal | Total precipitation in the week | mm | 22.1 |
