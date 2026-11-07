@@ -84,7 +84,8 @@
   "documentation": {
     "data_dictionary": "docs/data_dictionary.md",
     "fair_score": "docs/fair_score.md",
-    "architecture": "docs/architecture.png"
+    "architecture": "docs/architecture.png",
+    "schema": "docs/data_dictionary.md"
   },
   "distribution": [
     {
@@ -96,7 +97,7 @@
       "primary_key": [
         "site_id"
       ],
-      "sha256_first16": "ef0f74dc5afa09ac"
+      "sha256_first16": "366689c6cb634400"
     },
     {
       "file": "data/processed/2025/daily_counts.csv",
@@ -162,6 +163,8 @@
     "Weather is from one station (Mannheim) and is also used for Heidelberg.",
     "bikes_in and bikes_out are empty for 2 sites that only report a total.",
     "The counter operator can change the counter setup without notice.",
-    "In weekly_counts.csv use valid_days to judge partial weeks (bikes_total is NULL when valid_days = 0)."
-  ]
+    "In weekly_counts.csv use valid_days to judge partial weeks (bikes_total is NULL when valid_days = 0).",
+    "Counter B38. RI. AUS (Mannheim) counts about 4-12 bikes/day until August 2025 and about 1,000+/day from September (level shift, likely counter reconfiguration). Exclude this site before September 2025 when training a model."
+  ],
+  "schema": "docs/data_dictionary.md (column names, types, units, meaning)"
 }

@@ -18,8 +18,8 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 0.1 | Create GitHub repo, add README, TASKS, requirements | Jasmeet | ✅ | 2 Nov |
 | 0.2 | Invite all 4 teammates as collaborators | Jasmeet | ✅ | 2 Nov |
 | 0.3 | Create folders: `data/raw`, `data/processed`, `notebooks`, `src`, `tests`, `tableau`, `docs`, `slides`, `report` | Jasmeet | ✅ | 2 Nov |
-| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ✅ | |
-| 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ✅, Keshav ✅ | |
+| 0.4 | Clone repo + `pip install -r requirements.txt` | Everyone | Jasmeet ✅, Yash ✅, Vivek ✅, Shashank ✅, Keshav ✅ | |
+| 0.5 | Install Tableau Prep Builder (free student licence) | Everyone | Jasmeet ✅, Yash ✅, Vivek ✅, Shashank ✅, Keshav ✅ | |
 | 0.6 | Share SRH slide template in `slides/` | Jasmeet | ✅ | |
 
 ## Phase 1 — Get the data (Day 1)
@@ -68,13 +68,13 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 | # | Task | Owner | Status | Date |
 |---|---|---|---|---|
-| 4.1 | Slides 1–2: dataset, problem statement, architecture | Jasmeet | ⬜ | |
-| 4.2 | Slide 3: FAIR | Keshav | ⬜ | |
+| 4.1 | Slides 1–2: dataset, problem statement, architecture | Jasmeet | ✅ | |
+| 4.2 | Slide 3: FAIR | Keshav | ✅ | |
 | 4.3 | Slides 4–5: profiling | Yash | ⬜ | |
 | 4.4 | Slides 6–11: Tableau Prep (full flow + main steps) | Vivek | ⬜ | |
 | 4.5 | Slides 12–13: reproducible pipeline | Shashank | ⬜ | |
 | 4.6 | Slide 14: governance | Keshav | ⬜ | |
-| 4.7 | Slide 15: conclusion (answer the problem statement + lessons learned) | Jasmeet | ⬜ | |
+| 4.7 | Slide 15: conclusion (answer the problem statement + lessons learned) | Jasmeet | ✅ | |
 | 4.8 | Merge all slides into one deck (SRH template only) | Jasmeet | ⬜ | |
 | 4.9 | Rehearsal 1 with timer (target 14:30 min) | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
 | 4.10 | Rehearsal 2 + list of likely questions and answers | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
@@ -108,3 +108,4 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 6 Nov | Jasmeet | Check 3.10, Tableau vs Python: match on 10,839 rows, 30 sites, 77 outages, 20 single zero days, 10 outliers. Still different: B9 missing days not added (10,839 vs 10,874), weekly 1,577 vs 1,580 rows without valid_days, no separate sites/weather outputs. Vivek: follow-up PR |
 | 7 Nov | Jasmeet | Full re-run on a second machine (Linux, other pandas version): 10/10 tests pass, same row counts, 4 of 5 outputs byte-identical. sites.csv differed in the 15th decimal of 3 coordinates → coordinates rounded to 6 decimals (~10 cm), now identical everywhere |
 | 7 Nov | Jasmeet | Tableau flow review sent to Vivek: rain threshold 0.1 → 1 mm (132 vs 94 rainy days), -999 cleaned columns not kept, stray ``` in 2 formulas, B9 missing days, sites output + valid_days missing |
+| 7 Nov | Jasmeet | Effect analysis on model_table (median of 29 sites): holiday −52 %, weekend −40 %, cold −35 %, heavy rain −23 %, rain −14 %; R² 0.57 (temp, rain, weekend, holiday). Found level shift at B38. RI. AUS (×130 from Sept) → documented in metadata + governance risk 10 |

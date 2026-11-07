@@ -19,8 +19,8 @@ Written by: Keshav Sain · 5 Nov 2026
 | `site_id` | integer | Unique ID of the counter site (from Eco-Counter). **Primary key** | – | 100012161 |
 | `site_name` | text | Name of the counting location | – | Plöck |
 | `city` | text | City of the site: Heidelberg or Mannheim | – | Heidelberg |
-| `latitude` | decimal | Latitude of the site (median of all reported positions) | degrees (WGS 84) | 49.40913 |
-| `longitude` | decimal | Longitude of the site (median of all reported positions) | degrees (WGS 84) | 8.698543 |
+| `latitude` | decimal | Latitude of the site (median of all reported positions, rounded to 6 decimals ≈ 10 cm) | degrees (WGS 84) | 49.40913 |
+| `longitude` | decimal | Longitude of the site (median of all reported positions, rounded to 6 decimals ≈ 10 cm) | degrees (WGS 84) | 8.698543 |
 | `counter_serial` | text | Serial number of the counting device | – | Y2H22032496 |
 | `first_date` | date | First day with data in 2025 | date | 2025-01-01 |
 | `last_date` | date | Last day with data in 2025 | date | 2025-12-31 |

@@ -20,7 +20,7 @@ Governance answers three questions: **who is responsible**, **where the data com
 
 **Decision rules**
 - Cleaning rules are changed only in `docs/cleaning_rules.md`, agreed by the whole team, and recorded in its change log.
-- Every change goes through a branch and a Pull Request; the group lead merges into `main`.
+- Every change goes through a branch and a Pull Request; `main` is protected on GitHub (no direct pushes, no force pushes, no deletion).
 - A NULL value is never replaced with 0 without a written rule.
 
 ---
@@ -86,6 +86,7 @@ Attribution text (README, slides, report): *Bicycle count data: MobiData BW / NV
 | 7 | **Missing direction** | `bikes_in` / `bikes_out` empty for 2 sites | Use `bikes_total` as the target. |
 | 8 | **Bias between sites** | Busy city-centre sites dominate the totals | Train per site or normalise counts per site. |
 | 9 | **Misuse of forecasts** | A forecast is not a measurement; wrong decisions on lane closures | Report forecast error and the data limitations together with any forecast. |
+| 10 | **Counter level shift** | B38. RI. AUS counts ~4–12 bikes/day until August 2025, then ~1,000+/day from September (×130). Our day-level rules do not catch a level shift; all 10 `is_outlier` flags are at this site | Documented in metadata. Exclude the site before September for training. Next step: a distribution check per site (observability) |
 
 ---
 

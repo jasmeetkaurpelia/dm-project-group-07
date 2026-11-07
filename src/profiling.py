@@ -140,7 +140,7 @@ def main() -> None:
 
     # ---- weather
     weather = load_weather()
-    w_lines, w_issues = [], []
+    w_lines = []
     year_frames = {}
     for kind, (fname, w) in weather.items():
         w_year = w[w["MESS_DATUM"].str.startswith(str(YEAR))]
