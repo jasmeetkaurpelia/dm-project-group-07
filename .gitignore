@@ -5,3 +5,7 @@ __pycache__/
 *.csv.gz
 tabpy_log.log*
 ~$*
+
+# TabPy logs
+tabpy_log*
+*.log
