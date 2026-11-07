@@ -46,12 +46,13 @@ Task tracking: see **[TASKS.md](TASKS.md)**.
 ├── data/
 │   ├── raw/               original downloads — never edit
 │   └── processed/         cleaned output
-├── notebooks/             01_profiling.ipynb, 02_pipeline_demo.ipynb
-├── src/                   download.py, cleaning.py
+├── notebooks/             (optional demos)
+├── src/                   download.py, profiling.py, cleaning.py, quality_kpis.py
 ├── tests/                 test_cleaning.py
-├── tableau/               flow.tflx
+├── tableau/               flow.tflx (packaged flow), bike_cleaning_pipeline.tfl, prep_script.py (Script step)
 ├── docs/                  metadata.json, data_dictionary.md, cleaning_rules.md,
-│                          cleaning_log.md, fair_score.md, architecture.png
+│                          cleaning_log_2025.md, fair_score.md, governance.md,
+│                          quality_before_after.md, profiling_report.md, architecture.png
 ├── slides/
 └── report/
 ```
@@ -66,16 +67,18 @@ python -m venv .venv
 pip install -r requirements.txt
 
 python src/download.py       # downloads raw data into data/raw/
-python src/cleaning.py       # writes cleaned data into data/processed/
+python src/profiling.py      # profiles the raw data -> docs/profiling_report.md
+python src/cleaning.py       # writes cleaned data into data/processed/2025/ + docs/cleaning_log_2025.md
+python src/quality_kpis.py   # quality KPIs before vs after -> docs/quality_before_after.md
 pytest                       # runs the tests
 ```
 
-Tableau Prep: open `tableau/flow.tflx` in Tableau Prep Builder.
+Tableau Prep: open `tableau/flow.tflx` in Tableau Prep Builder. The Script step needs TabPy (`pip install tabpy`, then run `tabpy`). Before running, point the two Output steps to your own `data/processed/` folder.
 
 ## How we work
 
-1. **Never edit `data/raw/`.** All changes happen in Tableau Prep or Python and are written in `docs/cleaning_log.md`.
-2. **One branch per person** (e.g. `yash-profiling`). Open a Pull Request, and Jasmeet merges into `main`.
+1. **Never edit `data/raw/`.** All changes happen in Tableau Prep or Python and are written in `docs/cleaning_log_2025.md`.
+2. **One branch per person** (e.g. `yash-profiling`). Open a Pull Request; `main` is protected (no direct pushes, no force pushes).
 3. **Same rules in both tools:** Tableau Prep and Python use the rules in `docs/cleaning_rules.md`, so the row counts must match.
 4. **Show numbers:** rows before → after, % missing before → after, FAIR score before → after.
 5. **Do not upload large files.** Keep raw data out of Git if it is bigger than 50 MB; `download.py` can rebuild it.

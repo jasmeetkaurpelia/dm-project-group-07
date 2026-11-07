@@ -1,0 +1,170 @@
+{
+  "title": "Bike counts and weather, Heidelberg and Mannheim, 2025 (cleaned, AI-ready)",
+  "description": "Daily bicycle counts from 30 Eco-Counter sites in Heidelberg and Mannheim for 2025, cleaned and joined with daily weather from DWD station 05906 Mannheim and calendar features (weekday, weekend, Baden-Wuerttemberg public holidays). Missing days and sensor outages are kept as NULL with flags, never as 0. Built for analysing and forecasting daily bike traffic.",
+  "identifier": "https://github.com/jasmeetkaurpelia/dm-project-group-07",
+  "version": "1.1 (2025 data, weekly NULL fix)",
+  "language": "en",
+  "keywords": [
+    "bicycle traffic",
+    "bike counts",
+    "Eco-Counter",
+    "weather",
+    "DWD",
+    "Heidelberg",
+    "Mannheim",
+    "Baden-Wuerttemberg",
+    "open data",
+    "FAIR",
+    "data quality",
+    "AI-ready"
+  ],
+  "theme": "Transport, mobility",
+  "spatial": {
+    "area": "Heidelberg and Mannheim, Baden-Wuerttemberg, Germany",
+    "bounding_box_wgs84": {
+      "lat_min": 49.3886,
+      "lat_max": 49.5144,
+      "lon_min": 8.4566,
+      "lon_max": 8.726
+    }
+  },
+  "temporal": {
+    "start": "2025-01-01",
+    "end": "2025-12-31",
+    "resolution": "daily (plus weekly aggregate)",
+    "time_zone": "Europe/Berlin"
+  },
+  "creator": {
+    "name": "Data Management Group 07, SRH University of Applied Sciences Heidelberg",
+    "members": [
+      "Jasmeet Kaur",
+      "Yash Chinnannavar",
+      "Vivek Sawant",
+      "Shashank Kenkere Sridhar",
+      "Keshav Sain"
+    ]
+  },
+  "contact_point": "Keshav Sain (data steward, FAIR and governance lead)",
+  "date_issued": "2026-11-05",
+  "date_downloaded": "2026-11-02",
+  "licence": {
+    "data_product": "Datenlizenz Deutschland - Namensnennung 2.0 (dl-de/by-2-0)",
+    "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+    "note": "The product keeps the licence of the bike count source. Weather data is CC BY 4.0 (DWD). Both require attribution."
+  },
+  "attribution": "Bicycle count data: MobiData BW / NVBW, Datenlizenz Deutschland - Namensnennung 2.0. Weather data: Deutscher Wetterdienst (DWD), CC BY 4.0.",
+  "sources": [
+    {
+      "name": "MobiData BW - Eco-Counter bike counts (Fahrradzaehlstellen Baden-Wuerttemberg)",
+      "publisher": "MobiData BW / NVBW",
+      "url": "https://mobidata-bw.de/en/dataset/eco-counter-fahrradzahler",
+      "files": "fahrradzaehler_tageswerten_2025MM.csv.gz (12 monthly files)",
+      "licence": "Datenlizenz Deutschland - Namensnennung 2.0",
+      "licence_url": "https://www.govdata.de/dl-de/by-2-0"
+    },
+    {
+      "name": "DWD Climate Data Center - daily climate values (kl), station 05906 Mannheim",
+      "publisher": "Deutscher Wetterdienst (DWD)",
+      "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/",
+      "files": "tageswerte_KL_05906_17810101_20251231_hist.zip, tageswerte_KL_05906_akt.zip",
+      "licence": "CC BY 4.0",
+      "licence_url": "https://opendata.dwd.de/climate_environment/CDC/Terms_of_use.pdf"
+    }
+  ],
+  "provenance": {
+    "download": "src/download.py, log with URLs and SHA-256 checksums in data/raw/download_log.json",
+    "cleaning_rules": "docs/cleaning_rules.md",
+    "cleaning_code": "src/cleaning.py (run_pipeline), tests in tests/test_cleaning.py",
+    "cleaning_log": "docs/cleaning_log_2025.md (rows before and after each step)",
+    "tableau_flow": "tableau/flow.tflx",
+    "rows_raw_heidelberg_mannheim": 10839,
+    "rows_raw_all_baden_wuerttemberg": 57341,
+    "quality_before_after": "docs/quality_before_after.md"
+  },
+  "documentation": {
+    "data_dictionary": "docs/data_dictionary.md",
+    "fair_score": "docs/fair_score.md",
+    "architecture": "docs/architecture.png",
+    "schema": "docs/data_dictionary.md"
+  },
+  "distribution": [
+    {
+      "file": "data/processed/2025/sites.csv",
+      "format": "text/csv",
+      "encoding": "UTF-8",
+      "rows": 30,
+      "columns": 8,
+      "primary_key": [
+        "site_id"
+      ],
+      "sha256_first16": "366689c6cb634400"
+    },
+    {
+      "file": "data/processed/2025/daily_counts.csv",
+      "format": "text/csv",
+      "encoding": "UTF-8",
+      "rows": 10874,
+      "columns": 9,
+      "primary_key": [
+        "site_id",
+        "date"
+      ],
+      "foreign_keys": {
+        "site_id": "sites.site_id"
+      },
+      "sha256_first16": "ff85c432220b691e"
+    },
+    {
+      "file": "data/processed/2025/weather_daily.csv",
+      "format": "text/csv",
+      "encoding": "UTF-8",
+      "rows": 365,
+      "columns": 10,
+      "primary_key": [
+        "date"
+      ],
+      "sha256_first16": "365d6873918696d4"
+    },
+    {
+      "file": "data/processed/2025/model_table.csv",
+      "format": "text/csv",
+      "encoding": "UTF-8",
+      "rows": 10874,
+      "columns": 24,
+      "primary_key": [
+        "site_id",
+        "date"
+      ],
+      "sha256_first16": "b9e65e3dbe397c5d"
+    },
+    {
+      "file": "data/processed/2025/weekly_counts.csv",
+      "format": "text/csv",
+      "encoding": "UTF-8",
+      "rows": 1580,
+      "columns": 9,
+      "primary_key": [
+        "site_id",
+        "iso_year",
+        "iso_week"
+      ],
+      "sha256_first16": "a720b92a5bad59a7"
+    }
+  ],
+  "quality_after_cleaning": {
+    "uniqueness_site_day_pct": 100.0,
+    "counts_filled_pct": 98.97,
+    "missing_days_flagged": 35,
+    "outage_days_flagged": 77,
+    "outliers_flagged": 10,
+    "weather_days_with_temperature": "365 of 365"
+  },
+  "known_limitations": [
+    "Weather is from one station (Mannheim) and is also used for Heidelberg.",
+    "bikes_in and bikes_out are empty for 2 sites that only report a total.",
+    "The counter operator can change the counter setup without notice.",
+    "In weekly_counts.csv use valid_days to judge partial weeks (bikes_total is NULL when valid_days = 0).",
+    "Counter B38. RI. AUS (Mannheim) counts about 4-12 bikes/day until August 2025 and about 1,000+/day from September (level shift, likely counter reconfiguration). Exclude this site before September 2025 when training a model."
+  ],
+  "schema": "docs/data_dictionary.md (column names, types, units, meaning)"
+}

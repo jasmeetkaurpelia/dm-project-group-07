@@ -79,6 +79,15 @@ def test_holidays_and_weekends():
     assert out["is_weekend"].tolist() == [False, True, False]     # Saturday
 
 
+def test_weekly_total_is_null_when_no_valid_day():
+    m = pd.DataFrame({"site_id": "1", "site_name": "x", "city": "Heidelberg",
+                      "date": pd.date_range("2025-01-06", periods=14, freq="D"),
+                      "bikes_total": [np.nan] * 7 + [10.0] * 7, "temp_mean_c": 5.0, "precip_mm": 0.0})
+    out = c.aggregate_weekly(m)
+    assert pd.isna(out["bikes_total"].iloc[0]) and out["valid_days"].iloc[0] == 0   # unknown, not 0
+    assert out["bikes_total"].iloc[1] == 70
+
+
 def test_pipeline_output_on_real_data_if_present():
     """Runs on the downloaded data: key is unique and no -999 is left."""
     if not list(c.RAW_BIKE.glob("fahrradzaehler_tageswerten_*.csv")):
