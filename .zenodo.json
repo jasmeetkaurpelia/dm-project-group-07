@@ -1,0 +1,39 @@
+{
+    "title": "Bike counts and weather, Heidelberg + Mannheim 2025: a FAIR, AI-ready data product",
+    "upload_type": "dataset",
+    "description": "Cleaned daily bicycle counts for 30 counter sites in Heidelberg and Mannheim (2025), joined with DWD daily weather (station 05906 Mannheim) and calendar features. Includes the raw files, the cleaning code (Python + Tableau Prep), tests, cleaning log with checksums, data dictionary, metadata and FAIR assessment. Group project, Data Management, SRH University of Applied Sciences Heidelberg. Attribution: bicycle count data MobiData BW / NVBW, Datenlizenz Deutschland - Namensnennung 2.0; weather data Deutscher Wetterdienst (DWD), CC BY 4.0.",
+    "creators": [
+        {
+            "name": "Kaur, Jasmeet",
+            "affiliation": "SRH University of Applied Sciences Heidelberg"
+        },
+        {
+            "name": "Chinnannavar, Yash",
+            "affiliation": "SRH University of Applied Sciences Heidelberg"
+        },
+        {
+            "name": "Sawant, Vivek",
+            "affiliation": "SRH University of Applied Sciences Heidelberg"
+        },
+        {
+            "name": "Kenkere Sridhar, Shashank",
+            "affiliation": "SRH University of Applied Sciences Heidelberg"
+        },
+        {
+            "name": "Sain, Keshav",
+            "affiliation": "SRH University of Applied Sciences Heidelberg"
+        }
+    ],
+    "keywords": [
+        "bicycle counts",
+        "weather",
+        "Heidelberg",
+        "Mannheim",
+        "open data",
+        "FAIR",
+        "data quality",
+        "MobiData BW",
+        "DWD"
+    ],
+    "access_right": "open"
+}

@@ -1,0 +1,931 @@
+site_id,date,bikes_in,bikes_out,bikes_total,is_missing,is_outage,is_zero,is_outlier,site_name,city,temp_mean_c,temp_max_c,temp_min_c,precip_mm,snow_depth_cm,sunshine_h,wind_mean_ms,humidity_pct,is_rainy,weekday,is_weekend,is_holiday,month
+100012161,2026-01-01,312,341,653,False,False,False,False,Plöck,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100012161,2026-01-02,654,928,1582,False,False,False,False,Plöck,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100012161,2026-01-03,613,860,1473,False,False,False,False,Plöck,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100012161,2026-01-04,458,636,1094,False,False,False,False,Plöck,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100012161,2026-01-05,849,1208,2057,False,False,False,False,Plöck,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100012161,2026-01-06,247,362,609,False,False,False,False,Plöck,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100012161,2026-01-07,1017,1397,2414,False,False,False,False,Plöck,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100012161,2026-01-08,1087,1522,2609,False,False,False,False,Plöck,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100012161,2026-01-09,1158,1593,2751,False,False,False,False,Plöck,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100012161,2026-01-10,832,1156,1988,False,False,False,False,Plöck,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100012161,2026-01-11,718,912,1630,False,False,False,False,Plöck,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100012161,2026-01-12,1247,1726,2973,False,False,False,False,Plöck,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100012161,2026-01-13,1819,2317,4136,False,False,False,False,Plöck,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100012161,2026-01-14,1675,2195,3870,False,False,False,False,Plöck,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100012161,2026-01-15,1859,1999,3858,False,False,False,False,Plöck,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100012161,2026-01-16,1773,2286,4059,False,False,False,False,Plöck,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100012161,2026-01-17,1469,1895,3364,False,False,False,False,Plöck,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100012161,2026-01-18,1121,1273,2394,False,False,False,False,Plöck,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100012161,2026-01-19,1632,2248,3880,False,False,False,False,Plöck,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100012161,2026-01-20,1726,2296,4022,False,False,False,False,Plöck,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100012161,2026-01-21,1706,2344,4050,False,False,False,False,Plöck,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100012161,2026-01-22,1639,2271,3910,False,False,False,False,Plöck,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100012161,2026-01-23,1554,2092,3646,False,False,False,False,Plöck,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100012161,2026-01-24,1281,1857,3138,False,False,False,False,Plöck,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100012161,2026-01-25,947,1173,2120,False,False,False,False,Plöck,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100012161,2026-01-26,1374,1914,3288,False,False,False,False,Plöck,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100012161,2026-01-27,1630,2147,3777,False,False,False,False,Plöck,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100012161,2026-01-28,1569,1914,3483,False,False,False,False,Plöck,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100012161,2026-01-29,1605,2010,3615,False,False,False,False,Plöck,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100012161,2026-01-30,1560,2080,3640,False,False,False,False,Plöck,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100012161,2026-01-31,1360,1765,3125,False,False,False,False,Plöck,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100013034,2026-01-01,238,171,409,False,False,False,False,Mannheimer Straße,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100013034,2026-01-02,358,253,611,False,False,False,False,Mannheimer Straße,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100013034,2026-01-03,242,165,407,False,False,False,False,Mannheimer Straße,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100013034,2026-01-04,219,148,367,False,False,False,False,Mannheimer Straße,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100013034,2026-01-05,421,316,737,False,False,False,False,Mannheimer Straße,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100013034,2026-01-06,209,120,329,False,False,False,False,Mannheimer Straße,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100013034,2026-01-07,684,485,1169,False,False,False,False,Mannheimer Straße,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100013034,2026-01-08,617,514,1131,False,False,False,False,Mannheimer Straße,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100013034,2026-01-09,642,541,1183,False,False,False,False,Mannheimer Straße,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100013034,2026-01-10,234,179,413,False,False,False,False,Mannheimer Straße,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100013034,2026-01-11,265,194,459,False,False,False,False,Mannheimer Straße,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100013034,2026-01-12,751,585,1336,False,False,False,False,Mannheimer Straße,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100013034,2026-01-13,1402,657,2059,False,False,False,False,Mannheimer Straße,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100013034,2026-01-14,1829,207,2036,False,False,False,False,Mannheimer Straße,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100013034,2026-01-15,1898,255,2153,False,False,False,False,Mannheimer Straße,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100013034,2026-01-16,1862,234,2096,False,False,False,False,Mannheimer Straße,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100013034,2026-01-17,794,140,934,False,False,False,False,Mannheimer Straße,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100013034,2026-01-18,609,102,711,False,False,False,False,Mannheimer Straße,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100013034,2026-01-19,1870,192,2062,False,False,False,False,Mannheimer Straße,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100013034,2026-01-20,1917,173,2090,False,False,False,False,Mannheimer Straße,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100013034,2026-01-21,1722,150,1872,False,False,False,False,Mannheimer Straße,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100013034,2026-01-22,1696,141,1837,False,False,False,False,Mannheimer Straße,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100013034,2026-01-23,1637,132,1769,False,False,False,False,Mannheimer Straße,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100013034,2026-01-24,771,99,870,False,False,False,False,Mannheimer Straße,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100013034,2026-01-25,472,73,545,False,False,False,False,Mannheimer Straße,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100013034,2026-01-26,1402,132,1534,False,False,False,False,Mannheimer Straße,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100013034,2026-01-27,1723,177,1900,False,False,False,False,Mannheimer Straße,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100013034,2026-01-28,1499,115,1614,False,False,False,False,Mannheimer Straße,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100013034,2026-01-29,1557,135,1692,False,False,False,False,Mannheimer Straße,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100013034,2026-01-30,1495,145,1640,False,False,False,False,Mannheimer Straße,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100013034,2026-01-31,935,140,1075,False,False,False,False,Mannheimer Straße,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100013246,2026-01-01,511,227,738,False,False,False,False,Renzstraße,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100013246,2026-01-02,1015,500,1515,False,False,False,False,Renzstraße,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100013246,2026-01-03,525,249,774,False,False,False,False,Renzstraße,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100013246,2026-01-04,542,264,806,False,False,False,False,Renzstraße,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100013246,2026-01-05,1168,604,1772,False,False,False,False,Renzstraße,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100013246,2026-01-06,474,231,705,False,False,False,False,Renzstraße,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100013246,2026-01-07,1323,648,1971,False,False,False,False,Renzstraße,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100013246,2026-01-08,1331,646,1977,False,False,False,False,Renzstraße,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100013246,2026-01-09,1574,764,2338,False,False,False,False,Renzstraße,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100013246,2026-01-10,781,365,1146,False,False,False,False,Renzstraße,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100013246,2026-01-11,744,342,1086,False,False,False,False,Renzstraße,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100013246,2026-01-12,1619,814,2433,False,False,False,False,Renzstraße,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100013246,2026-01-13,2494,1131,3625,False,False,False,False,Renzstraße,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100013246,2026-01-14,2553,1167,3720,False,False,False,False,Renzstraße,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100013246,2026-01-15,2581,1205,3786,False,False,False,False,Renzstraße,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100013246,2026-01-16,2502,1128,3630,False,False,False,False,Renzstraße,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100013246,2026-01-17,1333,564,1897,False,False,False,False,Renzstraße,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100013246,2026-01-18,952,366,1318,False,False,False,False,Renzstraße,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100013246,2026-01-19,2526,1182,3708,False,False,False,False,Renzstraße,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100013246,2026-01-20,2569,1247,3816,False,False,False,False,Renzstraße,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100013246,2026-01-21,2458,1120,3578,False,False,False,False,Renzstraße,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100013246,2026-01-22,2366,1096,3462,False,False,False,False,Renzstraße,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100013246,2026-01-23,2215,1037,3252,False,False,False,False,Renzstraße,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100013246,2026-01-24,1203,451,1654,False,False,False,False,Renzstraße,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100013246,2026-01-25,897,390,1287,False,False,False,False,Renzstraße,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100013246,2026-01-26,2108,1018,3126,False,False,False,False,Renzstraße,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100013246,2026-01-27,2349,1102,3451,False,False,False,False,Renzstraße,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100013246,2026-01-28,2014,920,2934,False,False,False,False,Renzstraße,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100013246,2026-01-29,2107,984,3091,False,False,False,False,Renzstraße,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100013246,2026-01-30,2085,914,2999,False,False,False,False,Renzstraße,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100013246,2026-01-31,1336,562,1898,False,False,False,False,Renzstraße,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100026599,2026-01-01,108,109,217,False,False,False,False,Jungbuschbrücke,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100026599,2026-01-02,205,224,429,False,False,False,False,Jungbuschbrücke,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100026599,2026-01-03,111,117,228,False,False,False,False,Jungbuschbrücke,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100026599,2026-01-04,114,119,233,False,False,False,False,Jungbuschbrücke,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100026599,2026-01-05,248,243,491,False,False,False,False,Jungbuschbrücke,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100026599,2026-01-06,121,129,250,False,False,False,False,Jungbuschbrücke,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100026599,2026-01-07,255,269,524,False,False,False,False,Jungbuschbrücke,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100026599,2026-01-08,282,281,563,False,False,False,False,Jungbuschbrücke,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100026599,2026-01-09,290,317,607,False,False,False,False,Jungbuschbrücke,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100026599,2026-01-10,141,147,288,False,False,False,False,Jungbuschbrücke,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100026599,2026-01-11,134,155,289,False,False,False,False,Jungbuschbrücke,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100026599,2026-01-12,329,336,665,False,False,False,False,Jungbuschbrücke,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100026599,2026-01-13,545,545,1090,False,False,False,False,Jungbuschbrücke,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100026599,2026-01-14,559,576,1135,False,False,False,False,Jungbuschbrücke,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100026599,2026-01-15,553,578,1131,False,False,False,False,Jungbuschbrücke,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100026599,2026-01-16,519,549,1068,False,False,False,False,Jungbuschbrücke,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100026599,2026-01-17,234,229,463,False,False,False,False,Jungbuschbrücke,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100026599,2026-01-18,176,216,392,False,False,False,False,Jungbuschbrücke,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100026599,2026-01-19,524,549,1073,False,False,False,False,Jungbuschbrücke,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100026599,2026-01-20,588,572,1160,False,False,False,False,Jungbuschbrücke,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100026599,2026-01-21,526,531,1057,False,False,False,False,Jungbuschbrücke,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100026599,2026-01-22,464,509,973,False,False,False,False,Jungbuschbrücke,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100026599,2026-01-23,463,462,925,False,False,False,False,Jungbuschbrücke,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100026599,2026-01-24,196,221,417,False,False,False,False,Jungbuschbrücke,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100026599,2026-01-25,130,161,291,False,False,False,False,Jungbuschbrücke,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100026599,2026-01-26,472,503,975,False,False,False,False,Jungbuschbrücke,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100026599,2026-01-27,559,593,1152,False,False,False,False,Jungbuschbrücke,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100026599,2026-01-28,467,476,943,False,False,False,False,Jungbuschbrücke,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100026599,2026-01-29,446,468,914,False,False,False,False,Jungbuschbrücke,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100026599,2026-01-30,431,469,900,False,False,False,False,Jungbuschbrücke,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100026599,2026-01-31,220,215,435,False,False,False,False,Jungbuschbrücke,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100037257,2026-01-01,8,3,11,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100037257,2026-01-02,27,5,32,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100037257,2026-01-03,8,2,10,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100037257,2026-01-04,14,6,20,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100037257,2026-01-05,19,10,29,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100037257,2026-01-06,8,2,10,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100037257,2026-01-07,18,5,23,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100037257,2026-01-08,19,4,23,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100037257,2026-01-09,46,8,54,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100037257,2026-01-10,28,8,36,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100037257,2026-01-11,47,14,61,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100037257,2026-01-12,34,14,48,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100037257,2026-01-13,51,14,65,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100037257,2026-01-14,62,20,82,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100037257,2026-01-15,65,18,83,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100037257,2026-01-16,55,21,76,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100037257,2026-01-17,41,17,58,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100037257,2026-01-18,43,10,53,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100037257,2026-01-19,55,22,77,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100037257,2026-01-20,69,19,88,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100037257,2026-01-21,79,22,101,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100037257,2026-01-22,49,20,69,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100037257,2026-01-23,61,19,80,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100037257,2026-01-24,52,14,66,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100037257,2026-01-25,25,12,37,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100037257,2026-01-26,50,17,67,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100037257,2026-01-27,59,21,80,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100037257,2026-01-28,45,16,61,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100037257,2026-01-29,42,24,66,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100037257,2026-01-30,46,19,65,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100037257,2026-01-31,30,7,37,False,False,False,False,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100042618,2026-01-01,100,142,242,False,False,False,False,Lindenhofüberführung,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100042618,2026-01-02,323,362,685,False,False,False,False,Lindenhofüberführung,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100042618,2026-01-03,193,219,412,False,False,False,False,Lindenhofüberführung,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100042618,2026-01-04,150,172,322,False,False,False,False,Lindenhofüberführung,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100042618,2026-01-05,386,386,772,False,False,False,False,Lindenhofüberführung,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100042618,2026-01-06,120,103,223,False,False,False,False,Lindenhofüberführung,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100042618,2026-01-07,325,293,618,False,False,False,False,Lindenhofüberführung,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100042618,2026-01-08,389,341,730,False,False,False,False,Lindenhofüberführung,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100042618,2026-01-09,465,515,980,False,False,False,False,Lindenhofüberführung,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100042618,2026-01-10,296,323,619,False,False,False,False,Lindenhofüberführung,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100042618,2026-01-11,203,225,428,False,False,False,False,Lindenhofüberführung,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100042618,2026-01-12,452,482,934,False,False,False,False,Lindenhofüberführung,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100042618,2026-01-13,662,751,1413,False,False,False,False,Lindenhofüberführung,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100042618,2026-01-14,669,724,1393,False,False,False,False,Lindenhofüberführung,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100042618,2026-01-15,722,735,1457,False,False,False,False,Lindenhofüberführung,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100042618,2026-01-16,718,735,1453,False,False,False,False,Lindenhofüberführung,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100042618,2026-01-17,474,516,990,False,False,False,False,Lindenhofüberführung,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100042618,2026-01-18,279,336,615,False,False,False,False,Lindenhofüberführung,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100042618,2026-01-19,664,759,1423,False,False,False,False,Lindenhofüberführung,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100042618,2026-01-20,680,724,1404,False,False,False,False,Lindenhofüberführung,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100042618,2026-01-21,625,687,1312,False,False,False,False,Lindenhofüberführung,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100042618,2026-01-22,656,706,1362,False,False,False,False,Lindenhofüberführung,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100042618,2026-01-23,561,603,1164,False,False,False,False,Lindenhofüberführung,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100042618,2026-01-24,406,462,868,False,False,False,False,Lindenhofüberführung,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100042618,2026-01-25,231,292,523,False,False,False,False,Lindenhofüberführung,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100042618,2026-01-26,620,667,1287,False,False,False,False,Lindenhofüberführung,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100042618,2026-01-27,638,737,1375,False,False,False,False,Lindenhofüberführung,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100042618,2026-01-28,538,622,1160,False,False,False,False,Lindenhofüberführung,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100042618,2026-01-29,555,682,1237,False,False,False,False,Lindenhofüberführung,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100042618,2026-01-30,584,657,1241,False,False,False,False,Lindenhofüberführung,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100042618,2026-01-31,471,536,1007,False,False,False,False,Lindenhofüberführung,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100042619,2026-01-01,85,129,214,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100042619,2026-01-02,176,226,402,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100042619,2026-01-03,115,172,287,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100042619,2026-01-04,108,124,232,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100042619,2026-01-05,210,337,547,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100042619,2026-01-06,80,103,183,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100042619,2026-01-07,224,302,526,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100042619,2026-01-08,199,283,482,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100042619,2026-01-09,256,359,615,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100042619,2026-01-10,124,207,331,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100042619,2026-01-11,127,165,292,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100042619,2026-01-12,328,405,733,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100042619,2026-01-13,458,604,1062,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100042619,2026-01-14,446,563,1009,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100042619,2026-01-15,474,592,1066,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100042619,2026-01-16,428,595,1023,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100042619,2026-01-17,238,341,579,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100042619,2026-01-18,158,223,381,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100042619,2026-01-19,410,585,995,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100042619,2026-01-20,432,541,973,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100042619,2026-01-21,364,513,877,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100042619,2026-01-22,400,480,880,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100042619,2026-01-23,347,480,827,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100042619,2026-01-24,226,296,522,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100042619,2026-01-25,124,167,291,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100042619,2026-01-26,388,499,887,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100042619,2026-01-27,402,562,964,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100042619,2026-01-28,347,398,745,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100042619,2026-01-29,364,449,813,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100042619,2026-01-30,370,531,901,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100042619,2026-01-31,249,339,588,False,False,False,False,Neckarauer Übergang -Schwetzinger Str.,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100042620,2026-01-01,97,90,187,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100042620,2026-01-02,216,200,416,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100042620,2026-01-03,119,119,238,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100042620,2026-01-04,105,105,210,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100042620,2026-01-05,264,256,520,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100042620,2026-01-06,135,116,251,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100042620,2026-01-07,290,246,536,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100042620,2026-01-08,300,280,580,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100042620,2026-01-09,326,314,640,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100042620,2026-01-10,141,118,259,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100042620,2026-01-11,130,107,237,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100042620,2026-01-12,340,327,667,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100042620,2026-01-13,656,592,1248,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100042620,2026-01-14,637,583,1220,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100042620,2026-01-15,773,693,1466,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100042620,2026-01-16,661,611,1272,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100042620,2026-01-17,271,257,528,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100042620,2026-01-18,194,164,358,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100042620,2026-01-19,641,581,1222,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100042620,2026-01-20,708,647,1355,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100042620,2026-01-21,691,621,1312,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100042620,2026-01-22,586,537,1123,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100042620,2026-01-23,519,481,1000,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100042620,2026-01-24,274,252,526,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100042620,2026-01-25,164,150,314,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100042620,2026-01-26,510,488,998,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100042620,2026-01-27,666,625,1291,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100042620,2026-01-28,516,457,973,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100042620,2026-01-29,540,494,1034,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100042620,2026-01-30,550,511,1061,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100042620,2026-01-31,277,243,520,False,False,False,False,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100042621,2026-01-01,78,105,183,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100042621,2026-01-02,242,235,477,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100042621,2026-01-03,85,93,178,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100042621,2026-01-04,89,108,197,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100042621,2026-01-05,327,348,675,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100042621,2026-01-06,175,177,352,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100042621,2026-01-07,303,304,607,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100042621,2026-01-08,274,310,584,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100042621,2026-01-09,324,332,656,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100042621,2026-01-10,119,125,244,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100042621,2026-01-11,92,95,187,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100042621,2026-01-12,348,397,745,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100042621,2026-01-13,640,665,1305,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100042621,2026-01-14,639,654,1293,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100042621,2026-01-15,622,673,1295,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100042621,2026-01-16,627,611,1238,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100042621,2026-01-17,192,219,411,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100042621,2026-01-18,136,141,277,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100042621,2026-01-19,604,673,1277,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100042621,2026-01-20,717,798,1515,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100042621,2026-01-21,676,690,1366,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100042621,2026-01-22,608,610,1218,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100042621,2026-01-23,506,541,1047,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100042621,2026-01-24,169,201,370,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100042621,2026-01-25,122,126,248,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100042621,2026-01-26,483,535,1018,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100042621,2026-01-27,659,704,1363,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100042621,2026-01-28,504,517,1021,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100042621,2026-01-29,523,573,1096,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100042621,2026-01-30,523,547,1070,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100042621,2026-01-31,190,214,404,False,False,False,False,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100043759,2026-01-01,176,166,342,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100043759,2026-01-02,410,429,839,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100043759,2026-01-03,235,217,452,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100043759,2026-01-04,179,198,377,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100043759,2026-01-05,543,551,1094,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100043759,2026-01-06,255,215,470,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100043759,2026-01-07,464,469,933,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100043759,2026-01-08,496,504,1000,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100043759,2026-01-09,550,540,1090,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100043759,2026-01-10,264,237,501,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100043759,2026-01-11,179,194,373,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100043759,2026-01-12,606,604,1210,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100043759,2026-01-13,1095,1070,2165,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100043759,2026-01-14,1048,1039,2087,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100043759,2026-01-15,1154,1166,2320,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100043759,2026-01-16,1052,1009,2061,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100043759,2026-01-17,461,428,889,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100043759,2026-01-18,260,267,527,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100043759,2026-01-19,1033,1003,2036,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100043759,2026-01-20,1125,1097,2222,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100043759,2026-01-21,1054,1043,2097,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100043759,2026-01-22,925,957,1882,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100043759,2026-01-23,846,842,1688,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100043759,2026-01-24,461,427,888,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100043759,2026-01-25,252,279,531,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100043759,2026-01-26,849,816,1665,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100043759,2026-01-27,1037,1044,2081,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100043759,2026-01-28,861,854,1715,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100043759,2026-01-29,889,886,1775,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100043759,2026-01-30,894,834,1728,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100043759,2026-01-31,492,442,934,False,False,False,False,Konrad-Adenauer-Brücke,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100043761,2026-01-01,422,499,921,False,False,False,False,Kurpfalzbrücke,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100043761,2026-01-02,813,1071,1884,False,False,False,False,Kurpfalzbrücke,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100043761,2026-01-03,591,754,1345,False,False,False,False,Kurpfalzbrücke,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100043761,2026-01-04,455,530,985,False,False,False,False,Kurpfalzbrücke,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100043761,2026-01-05,911,1164,2075,False,False,False,False,Kurpfalzbrücke,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100043761,2026-01-06,192,317,509,False,False,False,False,Kurpfalzbrücke,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100043761,2026-01-07,765,1024,1789,False,False,False,False,Kurpfalzbrücke,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100043761,2026-01-08,845,1117,1962,False,False,False,False,Kurpfalzbrücke,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100043761,2026-01-09,917,1315,2232,False,False,False,False,Kurpfalzbrücke,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100043761,2026-01-10,866,1007,1873,False,False,False,False,Kurpfalzbrücke,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100043761,2026-01-11,533,723,1256,False,False,False,False,Kurpfalzbrücke,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100043761,2026-01-12,974,1351,2325,False,False,False,False,Kurpfalzbrücke,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100043761,2026-01-13,1363,1967,3330,False,False,False,False,Kurpfalzbrücke,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100043761,2026-01-14,1362,1941,3303,False,False,False,False,Kurpfalzbrücke,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100043761,2026-01-15,1559,2105,3664,False,False,False,False,Kurpfalzbrücke,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100043761,2026-01-16,1466,2078,3544,False,False,False,False,Kurpfalzbrücke,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100043761,2026-01-17,1122,1482,2604,False,False,False,False,Kurpfalzbrücke,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100043761,2026-01-18,695,936,1631,False,False,False,False,Kurpfalzbrücke,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100043761,2026-01-19,1461,1973,3434,False,False,False,False,Kurpfalzbrücke,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100043761,2026-01-20,1503,2083,3586,False,False,False,False,Kurpfalzbrücke,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100043761,2026-01-21,1389,1794,3183,False,False,False,False,Kurpfalzbrücke,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100043761,2026-01-22,1371,1759,3130,False,False,False,False,Kurpfalzbrücke,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100043761,2026-01-23,1431,1750,3181,False,False,False,False,Kurpfalzbrücke,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100043761,2026-01-24,1099,1434,2533,False,False,False,False,Kurpfalzbrücke,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100043761,2026-01-25,644,836,1480,False,False,False,False,Kurpfalzbrücke,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100043761,2026-01-26,1252,1743,2995,False,False,False,False,Kurpfalzbrücke,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100043761,2026-01-27,1398,1943,3341,False,False,False,False,Kurpfalzbrücke,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100043761,2026-01-28,1165,1687,2852,False,False,False,False,Kurpfalzbrücke,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100043761,2026-01-29,1351,1728,3079,False,False,False,False,Kurpfalzbrücke,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100043761,2026-01-30,1361,1784,3145,False,False,False,False,Kurpfalzbrücke,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100043761,2026-01-31,1149,1555,2704,False,False,False,False,Kurpfalzbrücke,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100048811,2026-01-01,733,734,1467,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100048811,2026-01-02,1463,1338,2801,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100048811,2026-01-03,795,724,1519,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100048811,2026-01-04,857,836,1693,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100048811,2026-01-05,1954,1740,3694,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100048811,2026-01-06,739,655,1394,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100048811,2026-01-07,3208,2935,6143,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100048811,2026-01-08,3346,3063,6409,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100048811,2026-01-09,3727,3397,7124,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100048811,2026-01-10,1225,1030,2255,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100048811,2026-01-11,1013,1064,2077,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100048811,2026-01-12,4051,3527,7578,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100048811,2026-01-13,5710,4927,10637,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100048811,2026-01-14,5633,4936,10569,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100048811,2026-01-15,6045,5194,11239,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100048811,2026-01-16,5565,4783,10348,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100048811,2026-01-17,2031,2186,4217,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100048811,2026-01-18,1624,1638,3262,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100048811,2026-01-19,5766,5191,10957,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100048811,2026-01-20,5922,5306,11228,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100048811,2026-01-21,5424,5056,10480,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100048811,2026-01-22,5452,4421,9873,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100048811,2026-01-23,5032,4003,9035,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100048811,2026-01-24,2017,1608,3625,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100048811,2026-01-25,1491,1333,2824,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100048811,2026-01-26,4484,3774,8258,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100048811,2026-01-27,5693,4932,10625,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100048811,2026-01-28,5013,4328,9341,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100048811,2026-01-29,4922,4148,9070,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100048811,2026-01-30,4846,4056,8902,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100048811,2026-01-31,2115,1705,3820,False,False,False,False,Ernst-Walz-Brücke Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100048812,2026-01-01,793,819,1612,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100048812,2026-01-02,1608,1488,3096,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100048812,2026-01-03,1397,1315,2712,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100048812,2026-01-04,1018,1016,2034,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100048812,2026-01-05,2005,1893,3898,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100048812,2026-01-06,684,703,1387,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100048812,2026-01-07,2432,2422,4854,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100048812,2026-01-08,2642,2593,5235,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100048812,2026-01-09,3005,2925,5930,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100048812,2026-01-10,1732,1721,3453,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100048812,2026-01-11,1246,1333,2579,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100048812,2026-01-12,2921,2882,5803,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100048812,2026-01-13,4448,4437,8885,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100048812,2026-01-14,4308,4281,8589,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100048812,2026-01-15,4726,4603,9329,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100048812,2026-01-16,4664,4509,9173,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100048812,2026-01-17,3290,3112,6402,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100048812,2026-01-18,1994,2159,4153,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100048812,2026-01-19,4309,4248,8557,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100048812,2026-01-20,4682,4475,9157,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100048812,2026-01-21,4283,4181,8464,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100048812,2026-01-22,4299,4205,8504,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100048812,2026-01-23,4208,3989,8197,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100048812,2026-01-24,3049,2913,5962,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100048812,2026-01-25,1833,1941,3774,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100048812,2026-01-26,3468,3398,6866,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100048812,2026-01-27,4340,4181,8521,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100048812,2026-01-28,3718,3656,7374,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100048812,2026-01-29,3792,3729,7521,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100048812,2026-01-30,4223,3960,8183,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100048812,2026-01-31,3058,2996,6054,False,False,False,False,Thedor-Heuss-Brücke Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100048813,2026-01-01,228,199,427,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100048813,2026-01-02,370,419,789,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100048813,2026-01-03,325,321,646,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100048813,2026-01-04,256,259,515,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100048813,2026-01-05,496,474,970,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100048813,2026-01-06,223,188,411,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100048813,2026-01-07,633,649,1282,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100048813,2026-01-08,653,657,1310,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100048813,2026-01-09,754,761,1515,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100048813,2026-01-10,367,327,694,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100048813,2026-01-11,315,298,613,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100048813,2026-01-12,790,779,1569,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100048813,2026-01-13,1127,1173,2300,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100048813,2026-01-14,1144,1184,2328,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100048813,2026-01-15,1228,1275,2503,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100048813,2026-01-16,1136,1311,2447,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100048813,2026-01-17,714,726,1440,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100048813,2026-01-18,504,506,1010,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100048813,2026-01-19,1146,1186,2332,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100048813,2026-01-20,1158,1222,2380,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100048813,2026-01-21,1097,1200,2297,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100048813,2026-01-22,1065,1087,2152,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100048813,2026-01-23,1024,1032,2056,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100048813,2026-01-24,621,648,1269,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100048813,2026-01-25,435,424,859,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100048813,2026-01-26,840,866,1706,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100048813,2026-01-27,1070,1160,2230,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100048813,2026-01-28,920,1003,1923,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100048813,2026-01-29,986,997,1983,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100048813,2026-01-30,985,1045,2030,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100048813,2026-01-31,650,669,1319,False,False,False,False,Rohrbacher Straße Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100048814,2026-01-01,556,478,1034,False,False,False,False,Liebermannstraße,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100048814,2026-01-02,854,855,1709,False,False,False,False,Liebermannstraße,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100048814,2026-01-03,700,733,1433,False,False,False,False,Liebermannstraße,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100048814,2026-01-04,632,644,1276,False,False,False,False,Liebermannstraße,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100048814,2026-01-05,963,973,1936,False,False,False,False,Liebermannstraße,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100048814,2026-01-06,433,430,863,False,False,False,False,Liebermannstraße,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100048814,2026-01-07,1315,1392,2707,False,False,False,False,Liebermannstraße,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100048814,2026-01-08,1457,1545,3002,False,False,False,False,Liebermannstraße,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100048814,2026-01-09,1613,1680,3293,False,False,False,False,Liebermannstraße,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100048814,2026-01-10,842,899,1741,False,False,False,False,Liebermannstraße,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100048814,2026-01-11,808,828,1636,False,False,False,False,Liebermannstraße,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100048814,2026-01-12,1556,1664,3220,False,False,False,False,Liebermannstraße,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100048814,2026-01-13,2412,2501,4913,False,False,False,False,Liebermannstraße,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100048814,2026-01-14,2428,2421,4849,False,False,False,False,Liebermannstraße,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100048814,2026-01-15,2578,2693,5271,False,False,False,False,Liebermannstraße,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100048814,2026-01-16,2687,2835,5522,False,False,False,False,Liebermannstraße,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100048814,2026-01-17,1804,1734,3538,False,False,False,False,Liebermannstraße,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100048814,2026-01-18,1245,1178,2423,False,False,False,False,Liebermannstraße,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100048814,2026-01-19,2291,2332,4623,False,False,False,False,Liebermannstraße,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100048814,2026-01-20,2417,2507,4924,False,False,False,False,Liebermannstraße,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100048814,2026-01-21,2329,2422,4751,False,False,False,False,Liebermannstraße,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100048814,2026-01-22,2276,2318,4594,False,False,False,False,Liebermannstraße,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100048814,2026-01-23,2228,2356,4584,False,False,False,False,Liebermannstraße,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100048814,2026-01-24,1622,1662,3284,False,False,False,False,Liebermannstraße,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100048814,2026-01-25,1052,1059,2111,False,False,False,False,Liebermannstraße,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100048814,2026-01-26,1830,1929,3759,False,False,False,False,Liebermannstraße,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100048814,2026-01-27,2314,2384,4698,False,False,False,False,Liebermannstraße,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100048814,2026-01-28,2046,2146,4192,False,False,False,False,Liebermannstraße,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100048814,2026-01-29,2036,2032,4068,False,False,False,False,Liebermannstraße,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100048814,2026-01-30,2274,2316,4590,False,False,False,False,Liebermannstraße,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100048814,2026-01-31,1701,1843,3544,False,False,False,False,Liebermannstraße,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100049883,2026-01-01,45,41,86,False,False,False,False,Schlierbacher Landstraße,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100049883,2026-01-02,104,89,193,False,False,False,False,Schlierbacher Landstraße,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100049883,2026-01-03,53,42,95,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100049883,2026-01-04,43,32,75,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100049883,2026-01-05,99,92,191,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100049883,2026-01-06,44,39,83,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100049883,2026-01-07,171,155,326,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100049883,2026-01-08,152,134,286,False,False,False,False,Schlierbacher Landstraße,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100049883,2026-01-09,164,128,292,False,False,False,False,Schlierbacher Landstraße,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100049883,2026-01-10,47,58,105,False,False,False,False,Schlierbacher Landstraße,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100049883,2026-01-11,60,58,118,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100049883,2026-01-12,176,159,335,False,False,False,False,Schlierbacher Landstraße,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100049883,2026-01-13,321,280,601,False,False,False,False,Schlierbacher Landstraße,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100049883,2026-01-14,325,295,620,False,False,False,False,Schlierbacher Landstraße,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100049883,2026-01-15,318,271,589,False,False,False,False,Schlierbacher Landstraße,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100049883,2026-01-16,353,281,634,False,False,False,False,Schlierbacher Landstraße,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100049883,2026-01-17,174,150,324,False,False,False,False,Schlierbacher Landstraße,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100049883,2026-01-18,133,93,226,False,False,False,False,Schlierbacher Landstraße,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100049883,2026-01-19,328,269,597,False,False,False,False,Schlierbacher Landstraße,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100049883,2026-01-20,336,308,644,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100049883,2026-01-21,304,291,595,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100049883,2026-01-22,287,250,537,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100049883,2026-01-23,247,212,459,False,False,False,False,Schlierbacher Landstraße,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100049883,2026-01-24,154,117,271,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100049883,2026-01-25,107,106,213,False,False,False,False,Schlierbacher Landstraße,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100049883,2026-01-26,176,164,340,False,False,False,False,Schlierbacher Landstraße,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100049883,2026-01-27,297,250,547,False,False,False,False,Schlierbacher Landstraße,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100049883,2026-01-28,234,210,444,False,False,False,False,Schlierbacher Landstraße,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100049883,2026-01-29,222,210,432,False,False,False,False,Schlierbacher Landstraße,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100049883,2026-01-30,254,225,479,False,False,False,False,Schlierbacher Landstraße,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100049883,2026-01-31,130,112,242,False,False,False,False,Schlierbacher Landstraße,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100049901,2026-01-01,33,49,82,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100049901,2026-01-02,83,93,176,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100049901,2026-01-03,33,49,82,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100049901,2026-01-04,42,56,98,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100049901,2026-01-05,80,86,166,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100049901,2026-01-06,24,34,58,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100049901,2026-01-07,147,176,323,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100049901,2026-01-08,123,145,268,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100049901,2026-01-09,134,156,290,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100049901,2026-01-10,51,42,93,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100049901,2026-01-11,45,54,99,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100049901,2026-01-12,144,176,320,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100049901,2026-01-13,268,312,580,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100049901,2026-01-14,300,347,647,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100049901,2026-01-15,286,346,632,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100049901,2026-01-16,305,375,680,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100049901,2026-01-17,140,172,312,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100049901,2026-01-18,88,126,214,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100049901,2026-01-19,299,350,649,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100049901,2026-01-20,313,333,646,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100049901,2026-01-21,306,331,637,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100049901,2026-01-22,268,337,605,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100049901,2026-01-23,246,276,522,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100049901,2026-01-24,107,157,264,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100049901,2026-01-25,76,116,192,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100049901,2026-01-26,179,205,384,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100049901,2026-01-27,288,307,595,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100049901,2026-01-28,242,253,495,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100049901,2026-01-29,218,257,475,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100049901,2026-01-30,270,281,551,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100049901,2026-01-31,146,183,329,False,False,False,False,Ziegelhäuser Landstraße,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100050750,2026-01-01,66,137,203,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100050750,2026-01-02,184,315,499,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100050750,2026-01-03,175,274,449,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100050750,2026-01-04,63,124,187,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100050750,2026-01-05,217,409,626,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100050750,2026-01-06,89,93,182,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100050750,2026-01-07,262,364,626,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100050750,2026-01-08,249,362,611,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100050750,2026-01-09,323,529,852,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100050750,2026-01-10,226,352,578,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100050750,2026-01-11,126,205,331,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100050750,2026-01-12,289,476,765,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100050750,2026-01-13,413,736,1149,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100050750,2026-01-14,439,692,1131,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100050750,2026-01-15,457,795,1252,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100050750,2026-01-16,491,814,1305,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100050750,2026-01-17,370,637,1007,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100050750,2026-01-18,186,335,521,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100050750,2026-01-19,436,727,1163,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100050750,2026-01-20,424,725,1149,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100050750,2026-01-21,441,677,1118,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100050750,2026-01-22,396,701,1097,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100050750,2026-01-23,418,671,1089,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100050750,2026-01-24,368,560,928,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100050750,2026-01-25,179,294,473,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100050750,2026-01-26,340,574,914,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100050750,2026-01-27,372,661,1033,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100050750,2026-01-28,336,564,900,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100050750,2026-01-29,347,625,972,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100050750,2026-01-30,376,629,1005,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100050750,2026-01-31,361,576,937,False,False,False,False,Kurfürstenanlage Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100056769,2026-01-01,118,174,292,False,False,False,False,Hardtstraße,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100056769,2026-01-02,305,309,614,False,False,False,False,Hardtstraße,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100056769,2026-01-03,259,207,466,False,False,False,False,Hardtstraße,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100056769,2026-01-04,194,195,389,False,False,False,False,Hardtstraße,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100056769,2026-01-05,334,339,673,False,False,False,False,Hardtstraße,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100056769,2026-01-06,115,139,254,False,False,False,False,Hardtstraße,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100056769,2026-01-07,489,427,916,False,False,False,False,Hardtstraße,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100056769,2026-01-08,525,435,960,False,False,False,False,Hardtstraße,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100056769,2026-01-09,617,497,1114,False,False,False,False,Hardtstraße,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100056769,2026-01-10,244,223,467,False,False,False,False,Hardtstraße,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100056769,2026-01-11,203,222,425,False,False,False,False,Hardtstraße,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100056769,2026-01-12,608,546,1154,False,False,False,False,Hardtstraße,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100056769,2026-01-13,946,841,1787,False,False,False,False,Hardtstraße,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100056769,2026-01-14,919,805,1724,False,False,False,False,Hardtstraße,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100056769,2026-01-15,995,902,1897,False,False,False,False,Hardtstraße,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100056769,2026-01-16,1057,930,1987,False,False,False,False,Hardtstraße,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100056769,2026-01-17,559,518,1077,False,False,False,False,Hardtstraße,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100056769,2026-01-18,374,376,750,False,False,False,False,Hardtstraße,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100056769,2026-01-19,952,799,1751,False,False,False,False,Hardtstraße,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100056769,2026-01-20,963,859,1822,False,False,False,False,Hardtstraße,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100056769,2026-01-21,934,794,1728,False,False,False,False,Hardtstraße,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100056769,2026-01-22,849,753,1602,False,False,False,False,Hardtstraße,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100056769,2026-01-23,822,711,1533,False,False,False,False,Hardtstraße,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100056769,2026-01-24,495,447,942,False,False,False,False,Hardtstraße,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100056769,2026-01-25,311,315,626,False,False,False,False,Hardtstraße,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100056769,2026-01-26,677,598,1275,False,False,False,False,Hardtstraße,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100056769,2026-01-27,951,809,1760,False,False,False,False,Hardtstraße,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100056769,2026-01-28,768,695,1463,False,False,False,False,Hardtstraße,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100056769,2026-01-29,773,695,1468,False,False,False,False,Hardtstraße,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100056769,2026-01-30,842,711,1553,False,False,False,False,Hardtstraße,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100056769,2026-01-31,483,462,945,False,False,False,False,Hardtstraße,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100056770,2026-01-01,102,690,792,False,False,False,False,Bahnstadtpromenade,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100056770,2026-01-02,174,1143,1317,False,False,False,False,Bahnstadtpromenade,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100056770,2026-01-03,183,940,1123,False,False,False,False,Bahnstadtpromenade,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100056770,2026-01-04,166,844,1010,False,False,False,False,Bahnstadtpromenade,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100056770,2026-01-05,192,1412,1604,False,False,False,False,Bahnstadtpromenade,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100056770,2026-01-06,87,615,702,False,False,False,False,Bahnstadtpromenade,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100056770,2026-01-07,257,1824,2081,False,False,False,False,Bahnstadtpromenade,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100056770,2026-01-08,298,2002,2300,False,False,False,False,Bahnstadtpromenade,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100056770,2026-01-09,339,2226,2565,False,False,False,False,Bahnstadtpromenade,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100056770,2026-01-10,220,1131,1351,False,False,False,False,Bahnstadtpromenade,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100056770,2026-01-11,213,1084,1297,False,False,False,False,Bahnstadtpromenade,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100056770,2026-01-12,314,2309,2623,False,False,False,False,Bahnstadtpromenade,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100056770,2026-01-13,470,3363,3833,False,False,False,False,Bahnstadtpromenade,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100056770,2026-01-14,458,3254,3712,False,False,False,False,Bahnstadtpromenade,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100056770,2026-01-15,528,3549,4077,False,False,False,False,Bahnstadtpromenade,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100056770,2026-01-16,555,3638,4193,False,False,False,False,Bahnstadtpromenade,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100056770,2026-01-17,441,2266,2707,False,False,False,False,Bahnstadtpromenade,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100056770,2026-01-18,318,1617,1935,False,False,False,False,Bahnstadtpromenade,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100056770,2026-01-19,452,3327,3779,False,False,False,False,Bahnstadtpromenade,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100056770,2026-01-20,475,3402,3877,False,False,False,False,Bahnstadtpromenade,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100056770,2026-01-21,449,3183,3632,False,False,False,False,Bahnstadtpromenade,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100056770,2026-01-22,460,3095,3555,False,False,False,False,Bahnstadtpromenade,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100056770,2026-01-23,469,3076,3545,False,False,False,False,Bahnstadtpromenade,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100056770,2026-01-24,407,2090,2497,False,False,False,False,Bahnstadtpromenade,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100056770,2026-01-25,276,1408,1684,False,False,False,False,Bahnstadtpromenade,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100056770,2026-01-26,361,2651,3012,False,False,False,False,Bahnstadtpromenade,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100056770,2026-01-27,449,3215,3664,False,False,False,False,Bahnstadtpromenade,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100056770,2026-01-28,391,2775,3166,False,False,False,False,Bahnstadtpromenade,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100056770,2026-01-29,411,2766,3177,False,False,False,False,Bahnstadtpromenade,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100056770,2026-01-30,466,3057,3523,False,False,False,False,Bahnstadtpromenade,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100056770,2026-01-31,438,2252,2690,False,False,False,False,Bahnstadtpromenade,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100059184,2026-01-01,,,180,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100059184,2026-01-02,,,223,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100059184,2026-01-03,,,151,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100059184,2026-01-04,,,163,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100059184,2026-01-05,,,318,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100059184,2026-01-06,,,179,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100059184,2026-01-07,,,559,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100059184,2026-01-08,,,565,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100059184,2026-01-09,,,535,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100059184,2026-01-10,,,256,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100059184,2026-01-11,,,235,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100059184,2026-01-12,,,599,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100059184,2026-01-13,,,852,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100059184,2026-01-14,,,762,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100059184,2026-01-15,,,859,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100059184,2026-01-16,,,799,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100059184,2026-01-17,,,403,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100059184,2026-01-18,,,340,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100059184,2026-01-19,,,860,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100059184,2026-01-20,,,831,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100059184,2026-01-21,,,833,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100059184,2026-01-22,,,802,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100059184,2026-01-23,,,713,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100059184,2026-01-24,,,400,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100059184,2026-01-25,,,331,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100059184,2026-01-26,,,673,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100059184,2026-01-27,,,786,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100059184,2026-01-28,,,654,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100059184,2026-01-29,,,726,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100059184,2026-01-30,,,698,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100059184,2026-01-31,,,434,False,False,False,False,Berliner Straße Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+100059187,2026-01-01,79,222,301,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+100059187,2026-01-02,131,685,816,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+100059187,2026-01-03,54,629,683,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+100059187,2026-01-04,87,301,388,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+100059187,2026-01-05,159,912,1071,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+100059187,2026-01-06,53,446,499,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+100059187,2026-01-07,107,1174,1281,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+100059187,2026-01-08,122,985,1107,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+100059187,2026-01-09,202,1002,1204,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+100059187,2026-01-10,122,741,863,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+100059187,2026-01-11,95,392,487,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+100059187,2026-01-12,192,976,1168,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+100059187,2026-01-13,321,1050,1371,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+100059187,2026-01-14,301,942,1243,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+100059187,2026-01-15,361,1140,1501,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+100059187,2026-01-16,366,1179,1545,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+100059187,2026-01-17,227,835,1062,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+100059187,2026-01-18,184,482,666,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+100059187,2026-01-19,304,1098,1402,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+100059187,2026-01-20,307,1108,1415,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+100059187,2026-01-21,255,967,1222,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+100059187,2026-01-22,249,1122,1371,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+100059187,2026-01-23,245,1046,1291,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+100059187,2026-01-24,175,749,924,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+100059187,2026-01-25,99,392,491,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+100059187,2026-01-26,244,1070,1314,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+100059187,2026-01-27,270,1045,1315,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+100059187,2026-01-28,258,963,1221,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+100059187,2026-01-29,264,1114,1378,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+100059187,2026-01-30,259,1117,1376,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+100059187,2026-01-31,196,857,1053,False,False,False,False,Eppelheimer Str. Querschnitt,Heidelberg,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300033853,2026-01-01,80,39,119,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300033853,2026-01-02,160,36,196,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300033853,2026-01-03,53,23,76,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300033853,2026-01-04,35,29,64,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300033853,2026-01-05,98,66,164,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300033853,2026-01-06,34,23,57,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300033853,2026-01-07,147,99,246,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300033853,2026-01-08,160,94,254,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300033853,2026-01-09,207,56,263,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300033853,2026-01-10,79,35,114,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300033853,2026-01-11,84,29,113,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300033853,2026-01-12,175,75,250,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300033853,2026-01-13,401,100,501,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300033853,2026-01-14,393,100,493,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300033853,2026-01-15,418,89,507,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300033853,2026-01-16,404,93,497,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300033853,2026-01-17,191,59,250,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300033853,2026-01-18,113,43,156,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300033853,2026-01-19,358,83,441,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300033853,2026-01-20,352,92,444,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300033853,2026-01-21,342,85,427,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300033853,2026-01-22,358,79,437,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300033853,2026-01-23,277,71,348,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300033853,2026-01-24,161,67,228,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300033853,2026-01-25,155,46,201,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300033853,2026-01-26,276,97,373,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300033853,2026-01-27,332,82,414,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300033853,2026-01-28,240,84,324,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300033853,2026-01-29,285,75,360,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300033853,2026-01-30,275,66,341,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300033853,2026-01-31,187,62,249,False,False,False,False,Feudenheimstr. stadtauswärts,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300033855,2026-01-01,54,30,84,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300033855,2026-01-02,75,42,117,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300033855,2026-01-03,27,13,40,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300033855,2026-01-04,41,23,64,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300033855,2026-01-05,64,21,85,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300033855,2026-01-06,19,15,34,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300033855,2026-01-07,95,62,157,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300033855,2026-01-08,86,61,147,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300033855,2026-01-09,112,73,185,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300033855,2026-01-10,44,20,64,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300033855,2026-01-11,50,28,78,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300033855,2026-01-12,120,76,196,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300033855,2026-01-13,229,133,362,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300033855,2026-01-14,209,132,341,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300033855,2026-01-15,218,129,347,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300033855,2026-01-16,220,139,359,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300033855,2026-01-17,123,91,214,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300033855,2026-01-18,86,81,167,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300033855,2026-01-19,204,148,352,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300033855,2026-01-20,240,182,422,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300033855,2026-01-21,193,132,325,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300033855,2026-01-22,221,137,358,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300033855,2026-01-23,186,126,312,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300033855,2026-01-24,101,61,162,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300033855,2026-01-25,65,46,111,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300033855,2026-01-26,143,105,248,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300033855,2026-01-27,212,140,352,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300033855,2026-01-28,135,109,244,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300033855,2026-01-29,197,132,329,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300033855,2026-01-30,179,140,319,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300033855,2026-01-31,111,75,186,False,False,False,False,Feudenheimerstr. stadteinwärts,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300034898,2026-01-01,60,55,115,False,False,False,False,Luzenbergstr.,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300034898,2026-01-02,125,123,248,False,False,False,False,Luzenbergstr.,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300034898,2026-01-03,69,60,129,False,False,False,False,Luzenbergstr.,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300034898,2026-01-04,62,63,125,False,False,False,False,Luzenbergstr.,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300034898,2026-01-05,143,133,276,False,False,False,False,Luzenbergstr.,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300034898,2026-01-06,62,37,99,False,False,False,False,Luzenbergstr.,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300034898,2026-01-07,159,137,296,False,False,False,False,Luzenbergstr.,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300034898,2026-01-08,166,164,330,False,False,False,False,Luzenbergstr.,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300034898,2026-01-09,187,168,355,False,False,False,False,Luzenbergstr.,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300034898,2026-01-10,74,81,155,False,False,False,False,Luzenbergstr.,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300034898,2026-01-11,63,68,131,False,False,False,False,Luzenbergstr.,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300034898,2026-01-12,186,176,362,False,False,False,False,Luzenbergstr.,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300034898,2026-01-13,310,281,591,False,False,False,False,Luzenbergstr.,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300034898,2026-01-14,348,313,661,False,False,False,False,Luzenbergstr.,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300034898,2026-01-15,322,297,619,False,False,False,False,Luzenbergstr.,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300034898,2026-01-16,365,321,686,False,False,False,False,Luzenbergstr.,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300034898,2026-01-17,121,113,234,False,False,False,False,Luzenbergstr.,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300034898,2026-01-18,75,91,166,False,False,False,False,Luzenbergstr.,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300034898,2026-01-19,315,269,584,False,False,False,False,Luzenbergstr.,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300034898,2026-01-20,351,323,674,False,False,False,False,Luzenbergstr.,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300034898,2026-01-21,320,284,604,False,False,False,False,Luzenbergstr.,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300034898,2026-01-22,283,271,554,False,False,False,False,Luzenbergstr.,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300034898,2026-01-23,275,256,531,False,False,False,False,Luzenbergstr.,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300034898,2026-01-24,126,127,253,False,False,False,False,Luzenbergstr.,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300034898,2026-01-25,74,73,147,False,False,False,False,Luzenbergstr.,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300034898,2026-01-26,242,258,500,False,False,False,False,Luzenbergstr.,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300034898,2026-01-27,295,271,566,False,False,False,False,Luzenbergstr.,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300034898,2026-01-28,238,236,474,False,False,False,False,Luzenbergstr.,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300034898,2026-01-29,245,232,477,False,False,False,False,Luzenbergstr.,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300034898,2026-01-30,276,263,539,False,False,False,False,Luzenbergstr.,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300034898,2026-01-31,118,156,274,False,False,False,False,Luzenbergstr.,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300034899,2026-01-01,102,129,231,False,False,False,False,B38. RI. AUS,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300034899,2026-01-02,206,279,485,False,False,False,False,B38. RI. AUS,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300034899,2026-01-03,107,130,237,False,False,False,False,B38. RI. AUS,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300034899,2026-01-04,85,146,231,False,False,False,False,B38. RI. AUS,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300034899,2026-01-05,232,334,566,False,False,False,False,B38. RI. AUS,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300034899,2026-01-06,67,97,164,False,False,False,False,B38. RI. AUS,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300034899,2026-01-07,264,362,626,False,False,False,False,B38. RI. AUS,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300034899,2026-01-08,271,345,616,False,False,False,False,B38. RI. AUS,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300034899,2026-01-09,310,468,778,False,False,False,False,B38. RI. AUS,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300034899,2026-01-10,131,177,308,False,False,False,False,B38. RI. AUS,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300034899,2026-01-11,102,157,259,False,False,False,False,B38. RI. AUS,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300034899,2026-01-12,308,462,770,False,False,False,False,B38. RI. AUS,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300034899,2026-01-13,526,680,1206,False,False,False,False,B38. RI. AUS,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300034899,2026-01-14,570,661,1231,False,False,False,False,B38. RI. AUS,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300034899,2026-01-15,578,747,1325,False,False,False,False,B38. RI. AUS,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300034899,2026-01-16,542,744,1286,False,False,False,False,B38. RI. AUS,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300034899,2026-01-17,275,390,665,False,False,False,False,B38. RI. AUS,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300034899,2026-01-18,190,261,451,False,False,False,False,B38. RI. AUS,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300034899,2026-01-19,528,752,1280,False,False,False,False,B38. RI. AUS,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300034899,2026-01-20,540,738,1278,False,False,False,False,B38. RI. AUS,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300034899,2026-01-21,490,653,1143,False,False,False,False,B38. RI. AUS,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300034899,2026-01-22,468,642,1110,False,False,False,False,B38. RI. AUS,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300034899,2026-01-23,420,578,998,False,False,False,False,B38. RI. AUS,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300034899,2026-01-24,220,323,543,False,False,False,False,B38. RI. AUS,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300034899,2026-01-25,173,252,425,False,False,False,False,B38. RI. AUS,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300034899,2026-01-26,401,561,962,False,False,False,False,B38. RI. AUS,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300034899,2026-01-27,496,691,1187,False,False,False,False,B38. RI. AUS,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300034899,2026-01-28,427,532,959,False,False,False,False,B38. RI. AUS,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300034899,2026-01-29,435,606,1041,False,False,False,False,B38. RI. AUS,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300034899,2026-01-30,421,623,1044,False,False,False,False,B38. RI. AUS,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300034899,2026-01-31,232,329,561,False,False,False,False,B38. RI. AUS,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300034900,2026-01-01,28,67,95,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300034900,2026-01-02,53,112,165,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300034900,2026-01-03,25,64,89,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300034900,2026-01-04,24,71,95,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300034900,2026-01-05,69,119,188,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300034900,2026-01-06,17,30,47,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300034900,2026-01-07,56,124,180,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300034900,2026-01-08,46,133,179,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300034900,2026-01-09,64,160,224,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300034900,2026-01-10,37,100,137,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300034900,2026-01-11,28,87,115,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300034900,2026-01-12,71,197,268,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300034900,2026-01-13,127,341,468,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300034900,2026-01-14,112,352,464,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300034900,2026-01-15,144,382,526,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300034900,2026-01-16,131,358,489,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300034900,2026-01-17,74,181,255,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300034900,2026-01-18,49,128,177,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300034900,2026-01-19,143,352,495,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300034900,2026-01-20,116,362,478,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300034900,2026-01-21,110,303,413,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300034900,2026-01-22,102,308,410,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300034900,2026-01-23,107,288,395,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300034900,2026-01-24,58,173,231,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300034900,2026-01-25,91,188,279,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300034900,2026-01-26,88,268,356,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300034900,2026-01-27,98,334,432,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300034900,2026-01-28,112,275,387,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300034900,2026-01-29,94,239,333,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300034900,2026-01-30,116,293,409,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300034900,2026-01-31,63,183,246,False,False,False,False,Theodor-Heuss-Anlage. RI. IN.,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300034901,2026-01-01,51,17,68,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300034901,2026-01-02,82,22,104,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300034901,2026-01-03,48,12,60,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300034901,2026-01-04,44,7,51,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300034901,2026-01-05,101,27,128,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300034901,2026-01-06,61,24,85,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300034901,2026-01-07,116,32,148,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300034901,2026-01-08,91,20,111,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300034901,2026-01-09,112,33,145,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300034901,2026-01-10,52,8,60,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300034901,2026-01-11,81,11,92,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300034901,2026-01-12,106,26,132,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300034901,2026-01-13,196,39,235,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300034901,2026-01-14,211,38,249,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300034901,2026-01-15,223,41,264,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300034901,2026-01-16,226,47,273,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300034901,2026-01-17,114,29,143,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300034901,2026-01-18,92,22,114,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300034901,2026-01-19,192,39,231,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300034901,2026-01-20,221,42,263,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300034901,2026-01-21,203,46,249,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300034901,2026-01-22,225,46,271,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300034901,2026-01-23,152,41,193,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300034901,2026-01-24,102,15,117,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300034901,2026-01-25,130,30,160,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300034901,2026-01-26,158,35,193,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300034901,2026-01-27,191,46,237,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300034901,2026-01-28,165,48,213,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300034901,2026-01-29,184,32,216,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300034901,2026-01-30,159,48,207,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300034901,2026-01-31,103,20,123,False,False,False,False,Theodor-Heuss-Anlage. RI. AUS,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300034976,2026-01-01,128,161,289,False,False,False,False,Fernmeldeturm.,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300034976,2026-01-02,211,221,432,False,False,False,False,Fernmeldeturm.,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300034976,2026-01-03,64,85,149,False,False,False,False,Fernmeldeturm.,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300034976,2026-01-04,102,138,240,False,False,False,False,Fernmeldeturm.,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300034976,2026-01-05,218,244,462,False,False,False,False,Fernmeldeturm.,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300034976,2026-01-06,67,77,144,False,False,False,False,Fernmeldeturm.,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300034976,2026-01-07,248,273,521,False,False,False,False,Fernmeldeturm.,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300034976,2026-01-08,239,274,513,False,False,False,False,Fernmeldeturm.,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300034976,2026-01-09,339,377,716,False,False,False,False,Fernmeldeturm.,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300034976,2026-01-10,129,166,295,False,False,False,False,Fernmeldeturm.,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300034976,2026-01-11,161,188,349,False,False,False,False,Fernmeldeturm.,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300034976,2026-01-12,354,369,723,False,False,False,False,Fernmeldeturm.,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300034976,2026-01-13,738,809,1547,False,False,False,False,Fernmeldeturm.,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300034976,2026-01-14,701,829,1530,False,False,False,False,Fernmeldeturm.,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300034976,2026-01-15,831,962,1793,False,False,False,False,Fernmeldeturm.,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300034976,2026-01-16,778,889,1667,False,False,False,False,Fernmeldeturm.,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300034976,2026-01-17,375,438,813,False,False,False,False,Fernmeldeturm.,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300034976,2026-01-18,280,331,611,False,False,False,False,Fernmeldeturm.,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300034976,2026-01-19,722,803,1525,False,False,False,False,Fernmeldeturm.,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300034976,2026-01-20,741,867,1608,False,False,False,False,Fernmeldeturm.,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300034976,2026-01-21,668,782,1450,False,False,False,False,Fernmeldeturm.,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300034976,2026-01-22,679,779,1458,False,False,False,False,Fernmeldeturm.,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300034976,2026-01-23,560,654,1214,False,False,False,False,Fernmeldeturm.,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300034976,2026-01-24,302,373,675,False,False,False,False,Fernmeldeturm.,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300034976,2026-01-25,233,288,521,False,False,False,False,Fernmeldeturm.,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300034976,2026-01-26,453,524,977,False,False,False,False,Fernmeldeturm.,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300034976,2026-01-27,655,765,1420,False,False,False,False,Fernmeldeturm.,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300034976,2026-01-28,476,538,1014,False,False,False,False,Fernmeldeturm.,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300034976,2026-01-29,551,600,1151,False,False,False,False,Fernmeldeturm.,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300034976,2026-01-30,521,579,1100,False,False,False,False,Fernmeldeturm.,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300034976,2026-01-31,358,409,767,False,False,False,False,Fernmeldeturm.,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1
+300040059,2026-01-01,0,0,0,False,False,True,False,B38. Ri. IN,Mannheim,0.8,3.0,-0.6,0.0,0,0.7,4.2,79.0,False,Thursday,False,True,1
+300040059,2026-01-02,0,1,1,False,False,False,False,B38. Ri. IN,Mannheim,1.7,4.8,-1.9,1.8,0,1.3,5.1,78.0,True,Friday,False,False,1
+300040059,2026-01-03,0,1,1,False,False,False,False,B38. Ri. IN,Mannheim,-1.3,0.1,-4.6,0.2,1,1.0,3.7,82.0,False,Saturday,True,False,1
+300040059,2026-01-04,,,,False,True,False,False,B38. Ri. IN,Mannheim,-1.6,1.4,-7.5,0.0,1,1.3,2.8,77.0,False,Sunday,True,False,1
+300040059,2026-01-05,,,,False,True,False,False,B38. Ri. IN,Mannheim,-5.1,-2.9,-6.9,1.9,1,1.1,2.0,87.0,True,Monday,False,False,1
+300040059,2026-01-06,,,,False,True,False,False,B38. Ri. IN,Mannheim,-3.4,-2.3,-6.2,0.0,6,0.0,1.9,89.0,False,Tuesday,False,True,1
+300040059,2026-01-07,,,,False,True,False,False,B38. Ri. IN,Mannheim,-3.8,-1.5,-7.4,0.3,5,5.7,3.2,83.0,False,Wednesday,False,False,1
+300040059,2026-01-08,,,,False,True,False,False,B38. Ri. IN,Mannheim,0.8,3.8,-1.5,10.0,5,0.0,3.2,91.0,True,Thursday,False,False,1
+300040059,2026-01-09,6,0,6,False,False,False,True,B38. Ri. IN,Mannheim,6.1,9.2,3.4,3.7,0,0.1,6.3,81.0,True,Friday,False,False,1
+300040059,2026-01-10,0,0,0,False,False,True,False,B38. Ri. IN,Mannheim,0.9,3.4,-2.3,2.7,0,0.0,3.7,89.0,True,Saturday,True,False,1
+300040059,2026-01-11,0,1,1,False,False,False,False,B38. Ri. IN,Mannheim,-2.1,0.3,-6.8,0.4,0,2.4,1.3,81.0,False,Sunday,True,False,1
+300040059,2026-01-12,,,,False,True,False,False,B38. Ri. IN,Mannheim,2.6,6.9,-0.5,2.2,0,0.0,3.6,89.0,True,Monday,False,False,1
+300040059,2026-01-13,,,,False,True,False,False,B38. Ri. IN,Mannheim,7.5,9.9,5.0,0.0,0,0.1,2.7,84.0,False,Tuesday,False,False,1
+300040059,2026-01-14,,,,False,True,False,False,B38. Ri. IN,Mannheim,8.5,10.7,6.7,5.4,0,0.0,2.8,81.0,True,Wednesday,False,False,1
+300040059,2026-01-15,,,,False,True,False,False,B38. Ri. IN,Mannheim,8.9,12.9,4.0,0.0,0,5.4,2.9,86.0,False,Thursday,False,False,1
+300040059,2026-01-16,,,,False,True,False,False,B38. Ri. IN,Mannheim,7.6,14.2,1.5,0.0,0,7.2,1.9,77.0,False,Friday,False,False,1
+300040059,2026-01-17,,,,False,True,False,False,B38. Ri. IN,Mannheim,2.2,5.6,-0.6,0.0,0,0.6,1.1,91.0,False,Saturday,True,False,1
+300040059,2026-01-18,,,,False,True,False,False,B38. Ri. IN,Mannheim,1.7,4.9,-1.5,0.0,0,0.0,0.9,88.0,False,Sunday,True,False,1
+300040059,2026-01-19,0,1,1,False,False,False,False,B38. Ri. IN,Mannheim,1.5,2.1,0.4,0.0,0,0.0,1.8,86.0,False,Monday,False,False,1
+300040059,2026-01-20,,,,False,True,False,False,B38. Ri. IN,Mannheim,-0.7,0.8,-3.7,0.0,0,2.1,1.2,93.0,False,Tuesday,False,False,1
+300040059,2026-01-21,,,,False,True,False,False,B38. Ri. IN,Mannheim,-2.2,-1.0,-4.3,0.0,0,0.0,1.3,98.0,False,Wednesday,False,False,1
+300040059,2026-01-22,,,,False,True,False,False,B38. Ri. IN,Mannheim,-2.1,1.9,-5.3,0.0,0,5.5,0.9,91.0,False,Thursday,False,False,1
+300040059,2026-01-23,,,,False,True,False,False,B38. Ri. IN,Mannheim,0.4,3.9,-1.9,0.0,0,5.4,1.2,80.0,False,Friday,False,False,1
+300040059,2026-01-24,,,,False,True,False,False,B38. Ri. IN,Mannheim,-0.1,4.7,-4.9,0.0,0,6.4,1.3,78.0,False,Saturday,True,False,1
+300040059,2026-01-25,,,,False,True,False,False,B38. Ri. IN,Mannheim,-1.8,0.6,-4.9,0.7,0,0.1,1.2,85.0,False,Sunday,True,False,1
+300040059,2026-01-26,,,,False,True,False,False,B38. Ri. IN,Mannheim,2.0,5.7,-0.9,0.9,0,0.0,2.1,86.0,False,Monday,False,False,1
+300040059,2026-01-27,0,1,1,False,False,False,False,B38. Ri. IN,Mannheim,4.5,7.7,0.3,4.4,0,3.1,1.3,84.0,True,Tuesday,False,False,1
+300040059,2026-01-28,,,,False,True,False,False,B38. Ri. IN,Mannheim,3.6,5.1,1.8,4.6,0,0.0,2.5,96.0,True,Wednesday,False,False,1
+300040059,2026-01-29,,,,False,True,False,False,B38. Ri. IN,Mannheim,2.1,2.9,0.4,0.9,0,0.0,1.3,95.0,False,Thursday,False,False,1
+300040059,2026-01-30,,,,False,True,False,False,B38. Ri. IN,Mannheim,1.7,3.9,-1.2,0.1,0,0.0,1.2,95.0,False,Friday,False,False,1
+300040059,2026-01-31,,,,False,True,False,False,B38. Ri. IN,Mannheim,4.2,8.8,1.3,0.0,0,3.7,1.3,89.0,False,Saturday,True,False,1

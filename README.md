@@ -1,5 +1,7 @@
 # Bike Counts + Weather — FAIR, AI-ready Data Product
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24058368.svg)](https://doi.org/10.5281/zenodo.24058368)
+
 **Data Management — Group Project** · SRH University of Applied Sciences Heidelberg · Prof. Dr. Mehrdad Jalali
 
 > **Key question:** Can this data be trusted, reused and fed into an AI model — and how do we prove it?
@@ -117,3 +119,9 @@ Checksums of every output file are in `docs/cleaning_log_2025.md`.
 3. **Same rules in both tools:** Tableau Prep and Python use the rules in `docs/cleaning_rules.md`, so the row counts must match.
 4. **Show numbers:** rows before → after, % missing before → after, FAIR score before → after.
 5. **Do not upload large files.** Keep raw data out of Git if it is bigger than 50 MB; `download.py` can rebuild it.
+
+## How to cite
+
+Kaur, J., Chinnannavar, Y., Sawant, V., Kenkere Sridhar, S., & Sain, K. (2026). *Bike counts and weather, Heidelberg + Mannheim 2025: a FAIR, AI-ready data product* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24058368
+
+Please also credit the sources: MobiData BW / NVBW (Datenlizenz Deutschland – Namensnennung 2.0) and Deutscher Wetterdienst (CC BY 4.0).

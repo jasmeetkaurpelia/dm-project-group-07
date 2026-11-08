@@ -1,0 +1,151 @@
+site_id,site_name,city,iso_year,iso_week,bikes_total,valid_days,temp_mean_c,precip_mm
+100012161,Plöck,Heidelberg,2026,1,4802,4,-0.1,2.0
+100012161,Plöck,Heidelberg,2026,2,14058,7,-0.94,19.0
+100012161,Plöck,Heidelberg,2026,3,24654,7,5.57,7.6
+100012161,Plöck,Heidelberg,2026,4,24766,7,-0.71,0.7
+100012161,Plöck,Heidelberg,2026,5,20928,6,3.02,10.9
+100013034,Mannheimer Straße,Heidelberg,2026,1,1794,4,-0.1,2.0
+100013034,Mannheimer Straße,Heidelberg,2026,2,5421,7,-0.94,19.0
+100013034,Mannheimer Straße,Heidelberg,2026,3,11325,7,5.57,7.6
+100013034,Mannheimer Straße,Heidelberg,2026,4,11045,7,-0.71,0.7
+100013034,Mannheimer Straße,Heidelberg,2026,5,9455,6,3.02,10.9
+100013246,Renzstraße,Mannheim,2026,1,3833,4,-0.1,2.0
+100013246,Renzstraße,Mannheim,2026,2,10995,7,-0.94,19.0
+100013246,Renzstraße,Mannheim,2026,3,20409,7,5.57,7.6
+100013246,Renzstraße,Mannheim,2026,4,20757,7,-0.71,0.7
+100013246,Renzstraße,Mannheim,2026,5,17499,6,3.02,10.9
+100026599,Jungbuschbrücke,Mannheim,2026,1,1107,4,-0.1,2.0
+100026599,Jungbuschbrücke,Mannheim,2026,2,3012,7,-0.94,19.0
+100026599,Jungbuschbrücke,Mannheim,2026,3,5944,7,5.57,7.6
+100026599,Jungbuschbrücke,Mannheim,2026,4,5896,7,-0.71,0.7
+100026599,Jungbuschbrücke,Mannheim,2026,5,5319,6,3.02,10.9
+100037257,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2026,1,73,4,-0.1,2.0
+100037257,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2026,2,236,7,-0.94,19.0
+100037257,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2026,3,465,7,5.57,7.6
+100037257,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2026,4,518,7,-0.71,0.7
+100037257,Kurt-Schumacher-Brücke Süd (Hafenstr.),Mannheim,2026,5,376,6,3.02,10.9
+100042618,Lindenhofüberführung,Mannheim,2026,1,1661,4,-0.1,2.0
+100042618,Lindenhofüberführung,Mannheim,2026,2,4370,7,-0.94,19.0
+100042618,Lindenhofüberführung,Mannheim,2026,3,8255,7,5.57,7.6
+100042618,Lindenhofüberführung,Mannheim,2026,4,8056,7,-0.71,0.7
+100042618,Lindenhofüberführung,Mannheim,2026,5,7307,6,3.02,10.9
+100042619,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2026,1,1135,4,-0.1,2.0
+100042619,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2026,2,2976,7,-0.94,19.0
+100042619,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2026,3,5853,7,5.57,7.6
+100042619,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2026,4,5365,7,-0.71,0.7
+100042619,Neckarauer Übergang -Schwetzinger Str.,Mannheim,2026,5,4898,6,3.02,10.9
+100042620,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2026,1,1051,4,-0.1,2.0
+100042620,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2026,2,3023,7,-0.94,19.0
+100042620,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2026,3,6759,7,5.57,7.6
+100042620,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2026,4,6852,7,-0.71,0.7
+100042620,Schlosspark Lindenhof (Richtung Jugendherberge),Mannheim,2026,5,5877,6,3.02,10.9
+100042621,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2026,1,1035,4,-0.1,2.0
+100042621,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2026,2,3305,7,-0.94,19.0
+100042621,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2026,3,6564,7,5.57,7.6
+100042621,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2026,4,7041,7,-0.71,0.7
+100042621,Kurt-Schumacher-Brücke Nord (Akademiestr),Mannheim,2026,5,5972,6,3.02,10.9
+100043759,Konrad-Adenauer-Brücke,Mannheim,2026,1,2010,4,-0.1,2.0
+100043759,Konrad-Adenauer-Brücke,Mannheim,2026,2,5461,7,-0.94,19.0
+100043759,Konrad-Adenauer-Brücke,Mannheim,2026,3,11259,7,5.57,7.6
+100043759,Konrad-Adenauer-Brücke,Mannheim,2026,4,11344,7,-0.71,0.7
+100043759,Konrad-Adenauer-Brücke,Mannheim,2026,5,9898,6,3.02,10.9
+100043761,Kurpfalzbrücke,Mannheim,2026,1,5135,4,-0.1,2.0
+100043761,Kurpfalzbrücke,Mannheim,2026,2,11696,7,-0.94,19.0
+100043761,Kurpfalzbrücke,Mannheim,2026,3,20401,7,5.57,7.6
+100043761,Kurpfalzbrücke,Mannheim,2026,4,20527,7,-0.71,0.7
+100043761,Kurpfalzbrücke,Mannheim,2026,5,18116,6,3.02,10.9
+100048811,Ernst-Walz-Brücke Querschnitt,Heidelberg,2026,1,7480,4,-0.1,2.0
+100048811,Ernst-Walz-Brücke Querschnitt,Heidelberg,2026,2,29096,7,-0.94,19.0
+100048811,Ernst-Walz-Brücke Querschnitt,Heidelberg,2026,3,57850,7,5.57,7.6
+100048811,Ernst-Walz-Brücke Querschnitt,Heidelberg,2026,4,58022,7,-0.71,0.7
+100048811,Ernst-Walz-Brücke Querschnitt,Heidelberg,2026,5,50016,6,3.02,10.9
+100048812,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2026,1,9454,4,-0.1,2.0
+100048812,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2026,2,27336,7,-0.94,19.0
+100048812,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2026,3,52334,7,5.57,7.6
+100048812,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2026,4,52615,7,-0.71,0.7
+100048812,Thedor-Heuss-Brücke Querschnitt,Heidelberg,2026,5,44519,6,3.02,10.9
+100048813,Rohrbacher Straße Querschnitt,Heidelberg,2026,1,2377,4,-0.1,2.0
+100048813,Rohrbacher Straße Querschnitt,Heidelberg,2026,2,6795,7,-0.94,19.0
+100048813,Rohrbacher Straße Querschnitt,Heidelberg,2026,3,13597,7,5.57,7.6
+100048813,Rohrbacher Straße Querschnitt,Heidelberg,2026,4,13345,7,-0.71,0.7
+100048813,Rohrbacher Straße Querschnitt,Heidelberg,2026,5,11191,6,3.02,10.9
+100048814,Liebermannstraße,Heidelberg,2026,1,5452,4,-0.1,2.0
+100048814,Liebermannstraße,Heidelberg,2026,2,15178,7,-0.94,19.0
+100048814,Liebermannstraße,Heidelberg,2026,3,29736,7,5.57,7.6
+100048814,Liebermannstraße,Heidelberg,2026,4,28871,7,-0.71,0.7
+100048814,Liebermannstraße,Heidelberg,2026,5,24851,6,3.02,10.9
+100049883,Schlierbacher Landstraße,Heidelberg,2026,1,449,4,-0.1,2.0
+100049883,Schlierbacher Landstraße,Heidelberg,2026,2,1401,7,-0.94,19.0
+100049883,Schlierbacher Landstraße,Heidelberg,2026,3,3329,7,5.57,7.6
+100049883,Schlierbacher Landstraße,Heidelberg,2026,4,3316,7,-0.71,0.7
+100049883,Schlierbacher Landstraße,Heidelberg,2026,5,2484,6,3.02,10.9
+100049901,Ziegelhäuser Landstraße,Heidelberg,2026,1,438,4,-0.1,2.0
+100049901,Ziegelhäuser Landstraße,Heidelberg,2026,2,1297,7,-0.94,19.0
+100049901,Ziegelhäuser Landstraße,Heidelberg,2026,3,3385,7,5.57,7.6
+100049901,Ziegelhäuser Landstraße,Heidelberg,2026,4,3515,7,-0.71,0.7
+100049901,Ziegelhäuser Landstraße,Heidelberg,2026,5,2829,6,3.02,10.9
+100050750,Kurfürstenanlage Querschnitt,Heidelberg,2026,1,1338,4,-0.1,2.0
+100050750,Kurfürstenanlage Querschnitt,Heidelberg,2026,2,3806,7,-0.94,19.0
+100050750,Kurfürstenanlage Querschnitt,Heidelberg,2026,3,7130,7,5.57,7.6
+100050750,Kurfürstenanlage Querschnitt,Heidelberg,2026,4,7017,7,-0.71,0.7
+100050750,Kurfürstenanlage Querschnitt,Heidelberg,2026,5,5761,6,3.02,10.9
+100056769,Hardtstraße,Heidelberg,2026,1,1761,4,-0.1,2.0
+100056769,Hardtstraße,Heidelberg,2026,2,4809,7,-0.94,19.0
+100056769,Hardtstraße,Heidelberg,2026,3,10376,7,5.57,7.6
+100056769,Hardtstraße,Heidelberg,2026,4,10004,7,-0.71,0.7
+100056769,Hardtstraße,Heidelberg,2026,5,8464,6,3.02,10.9
+100056770,Bahnstadtpromenade,Heidelberg,2026,1,4242,4,-0.1,2.0
+100056770,Bahnstadtpromenade,Heidelberg,2026,2,11900,7,-0.94,19.0
+100056770,Bahnstadtpromenade,Heidelberg,2026,3,23080,7,5.57,7.6
+100056770,Bahnstadtpromenade,Heidelberg,2026,4,22569,7,-0.71,0.7
+100056770,Bahnstadtpromenade,Heidelberg,2026,5,19232,6,3.02,10.9
+100059184,Berliner Straße Querschnitt,Heidelberg,2026,1,717,4,-0.1,2.0
+100059184,Berliner Straße Querschnitt,Heidelberg,2026,2,2647,7,-0.94,19.0
+100059184,Berliner Straße Querschnitt,Heidelberg,2026,3,4614,7,5.57,7.6
+100059184,Berliner Straße Querschnitt,Heidelberg,2026,4,4770,7,-0.71,0.7
+100059184,Berliner Straße Querschnitt,Heidelberg,2026,5,3971,6,3.02,10.9
+100059187,Eppelheimer Str. Querschnitt,Heidelberg,2026,1,2188,4,-0.1,2.0
+100059187,Eppelheimer Str. Querschnitt,Heidelberg,2026,2,6512,7,-0.94,19.0
+100059187,Eppelheimer Str. Querschnitt,Heidelberg,2026,3,8556,7,5.57,7.6
+100059187,Eppelheimer Str. Querschnitt,Heidelberg,2026,4,8116,7,-0.71,0.7
+100059187,Eppelheimer Str. Querschnitt,Heidelberg,2026,5,7657,6,3.02,10.9
+300033853,Feudenheimstr. stadtauswärts,Mannheim,2026,1,455,4,-0.1,2.0
+300033853,Feudenheimstr. stadtauswärts,Mannheim,2026,2,1211,7,-0.94,19.0
+300033853,Feudenheimstr. stadtauswärts,Mannheim,2026,3,2654,7,5.57,7.6
+300033853,Feudenheimstr. stadtauswärts,Mannheim,2026,4,2526,7,-0.71,0.7
+300033853,Feudenheimstr. stadtauswärts,Mannheim,2026,5,2061,6,3.02,10.9
+300033855,Feudenheimerstr. stadteinwärts,Mannheim,2026,1,305,4,-0.1,2.0
+300033855,Feudenheimerstr. stadteinwärts,Mannheim,2026,2,750,7,-0.94,19.0
+300033855,Feudenheimerstr. stadteinwärts,Mannheim,2026,3,1986,7,5.57,7.6
+300033855,Feudenheimerstr. stadteinwärts,Mannheim,2026,4,2042,7,-0.71,0.7
+300033855,Feudenheimerstr. stadteinwärts,Mannheim,2026,5,1678,6,3.02,10.9
+300034898,Luzenbergstr.,Mannheim,2026,1,617,4,-0.1,2.0
+300034898,Luzenbergstr.,Mannheim,2026,2,1642,7,-0.94,19.0
+300034898,Luzenbergstr.,Mannheim,2026,3,3319,7,5.57,7.6
+300034898,Luzenbergstr.,Mannheim,2026,4,3347,7,-0.71,0.7
+300034898,Luzenbergstr.,Mannheim,2026,5,2830,6,3.02,10.9
+300034899,B38. RI. AUS,Mannheim,2026,1,1184,4,-0.1,2.0
+300034899,B38. RI. AUS,Mannheim,2026,2,3317,7,-0.94,19.0
+300034899,B38. RI. AUS,Mannheim,2026,3,6934,7,5.57,7.6
+300034899,B38. RI. AUS,Mannheim,2026,4,6777,7,-0.71,0.7
+300034899,B38. RI. AUS,Mannheim,2026,5,5754,6,3.02,10.9
+300034900,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2026,1,444,4,-0.1,2.0
+300034900,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2026,2,1070,7,-0.94,19.0
+300034900,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2026,3,2647,7,5.57,7.6
+300034900,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2026,4,2701,7,-0.71,0.7
+300034900,Theodor-Heuss-Anlage. RI. IN.,Mannheim,2026,5,2163,6,3.02,10.9
+300034901,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2026,1,283,4,-0.1,2.0
+300034901,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2026,2,769,7,-0.94,19.0
+300034901,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2026,3,1410,7,5.57,7.6
+300034901,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2026,4,1484,7,-0.71,0.7
+300034901,Theodor-Heuss-Anlage. RI. AUS,Mannheim,2026,5,1189,6,3.02,10.9
+300034976,Fernmeldeturm.,Mannheim,2026,1,1110,4,-0.1,2.0
+300034976,Fernmeldeturm.,Mannheim,2026,2,3000,7,-0.94,19.0
+300034976,Fernmeldeturm.,Mannheim,2026,3,8684,7,5.57,7.6
+300034976,Fernmeldeturm.,Mannheim,2026,4,8451,7,-0.71,0.7
+300034976,Fernmeldeturm.,Mannheim,2026,5,6429,6,3.02,10.9
+300040059,B38. Ri. IN,Mannheim,2026,1,2,3,-0.1,2.0
+300040059,B38. Ri. IN,Mannheim,2026,2,7,3,-0.94,19.0
+300040059,B38. Ri. IN,Mannheim,2026,3,,0,5.57,7.6
+300040059,B38. Ri. IN,Mannheim,2026,4,1,1,-0.71,0.7
+300040059,B38. Ri. IN,Mannheim,2026,5,1,1,3.02,10.9

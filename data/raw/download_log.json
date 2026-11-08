@@ -103,5 +103,33 @@
     "bytes": 45405,
     "sha256": "8a90f74514b0806a73d1a0b93fa7e15ea6b77dfd876fa15b08ea50903abc16c6",
     "downloaded_at": "2026-11-02T11:30:45+00:00"
+  },
+  {
+    "url": "https://mobidata-bw.de/daten/eco-counter/v2/fahrradzaehler_tageswerten_202601.csv.gz",
+    "file": "data/raw/bike/fahrradzaehler_tageswerten_202601.csv.gz",
+    "bytes": 72940,
+    "sha256": "1b12d6c738574b8c088044152aa7956b867dc9f0712a7cd5377fc6067cce81d8",
+    "downloaded_at": "2026-11-08T18:30:48+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/recent/KL_Tageswerte_Beschreibung_Stationen.txt",
+    "file": "data/raw/weather/KL_Tageswerte_Beschreibung_Stationen.txt",
+    "bytes": 1388997,
+    "sha256": "04005f3c509f1e90fccb8011746f2fabea93997810dab614ab95c16a0742bb86",
+    "downloaded_at": "2026-11-08T18:30:48+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/historical/tageswerte_KL_05906_17810101_20251231_hist.zip",
+    "file": "data/raw/weather/tageswerte_KL_05906_17810101_20251231_hist.zip",
+    "bytes": 812768,
+    "sha256": "d7fd8a1ca6f2e033c402a970c5f647e542a9432b4a63880050acd530a4b328d7",
+    "downloaded_at": "2026-11-08T18:30:49+00:00"
+  },
+  {
+    "url": "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/daily/kl/recent/tageswerte_KL_05906_akt.zip",
+    "file": "data/raw/weather/tageswerte_KL_05906_akt.zip",
+    "bytes": 45405,
+    "sha256": "8a90f74514b0806a73d1a0b93fa7e15ea6b77dfd876fa15b08ea50903abc16c6",
+    "downloaded_at": "2026-11-08T18:30:49+00:00"
   }
 ]

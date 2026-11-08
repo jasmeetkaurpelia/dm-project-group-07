@@ -56,7 +56,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.6 | Python: one function per cleaning rule in `src/cleaning.py` | Shashank | Jasmeet ✅ (written), Shashank review ⬜ | |
 | 3.7 | Python: `run_pipeline()` that calls all functions in order | Shashank | Jasmeet ✅ (written), Shashank review ⬜ | |
 | 3.8 | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates) | Shashank | ✅ 15 tests pass (10 Jasmeet, 5 Yash in PR #7) | 8 Nov |
-| 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ✅ | |
+| 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ✅ Jan 2026 re-run (Jasmeet): same code, 5,103 → 930 rows, 23 outages, 1 outlier, 0 missing days, weather from DWD recent file | 8 Nov |
 | 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | ✅ Tableau = Python: 10,874 rows, 35 missing days, 77 outages, 10 outliers, 1,580 weekly rows | 8 Nov |
 | 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ✅ | 5 Nov |
 | 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
@@ -114,3 +114,6 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 8 Nov | Shashank | Profiling and quality chart re-run (PR #8), numbers unchanged |
 | 8 Nov | Jasmeet | Merged PR #6, #7, #8. Removed a module-level `pytest.skip` (pytest failed on a fresh clone without raw data). 15 tests pass. Fresh clone + re-run gives the same processed files and cleaning log |
 | 8 Nov | Jasmeet | Tableau Script step on a new laptop: TabPy must be started from the repo with `PYTHONPATH=src`, otherwise "No module named cleaning"; TabPy needs pandas, numpy, holidays. Output paths set to `data/processed/`. Steps written in README |
+| 8 Nov | Jasmeet | Tableau re-run verified row by row against Python: 10,874 daily rows, 0 differences in counts, flags, calendar and weather columns; weekly 1,580 rows, same totals (22,160,360) |
+| 8 Nov | Jasmeet | 3.9: Jan 2026 re-run with the same code: 5,103 → 930 rows (30 sites × 31 days, complete), 23 outages, 2 single zeros, 1 outlier; weather came from the DWD recent file (historical ends 31 Dec 2025), so rule W1 worked on new data |
+| 8 Nov | Jasmeet | DOI 10.5281/zenodo.24058368 via GitHub release → Zenodo, all 5 as authors (`.zenodo.json`). FAIR final 29/30 (F1, F4 now 2). DOI in README, metadata.json, fair_score.md. Keshav: no Zenodo task left |
