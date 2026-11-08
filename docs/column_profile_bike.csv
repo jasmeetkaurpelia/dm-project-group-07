@@ -9,10 +9,10 @@ longitude,text,0.0,30,100.0,8.456591129931805,8.725964292061843,8.698543
 latitude,text,0.0,30,100.0,49.3886384101731,49.51437950394198,49.40913
 timezone,text,0.0,1,0.0,,,(UTC+01:00) Europe/Paris DST
 iso_timestamp,text,0.0,365,0.0,,,2025-01-01T00:00:00+01:00
-channels_in,text,0.0,2978,96.62,0.0,9045.0,385
-channels_out,text,0.0,3053,96.63,0.0,7837.0,453
-channels_unknown,text,0.0,292,3.37,78.0,1341.0,na
+channels_in,text,3.38,2978,100.0,0.0,9045.0,385
+channels_out,text,3.37,3053,100.0,0.0,7837.0,453
+channels_unknown,text,96.63,292,100.0,78.0,1341.0,na
 channels_all,text,0.0,4450,100.0,0,16792,838
-site_temperature,text,0.0,63,96.86,-0.5,30.0,3.0
-site_rain_accumulation,text,0.0,103,96.86,0.0,43.0,0.0
-site_snow_accumulation,text,0.0,15,96.86,0.0,6.6,0.0
+site_temperature,text,3.14,63,100.0,-0.5,30.0,3.0
+site_rain_accumulation,text,3.14,103,100.0,0.0,43.0,0.0
+site_snow_accumulation,text,3.14,15,100.0,0.0,6.6,0.0
