@@ -10,6 +10,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import cleaning as c  # noqa: E402
@@ -98,3 +99,49 @@ def test_pipeline_output_on_real_data_if_present():
     assert not (weather.select_dtypes("number") == -999).any().any()
     assert (counts["bikes_total"].dropna() >= 0).all()
     assert tables["model_table"]["city"].notna().all()
+
+def test_outlier_is_flagged_but_value_kept():
+    out, _ = c.flag_outliers.raw(bike_rows([100.0] * 20 + [5000.0]))
+    assert out["is_outlier"].sum() == 1
+    assert out["bikes_total"].max() == 5000          # flag only, value kept
+
+
+def test_outlier_threshold_is_per_site():
+    big = bike_rows([3000.0] * 20, site="big")
+    small = bike_rows([100.0] * 19 + [3000.0], site="small")
+    out, _ = c.flag_outliers.raw(pd.concat([big, small], ignore_index=True))
+    assert out.loc[out["site_id"] == "big", "is_outlier"].sum() == 0    # normal for the big site
+    assert out.loc[out["site_id"] == "small", "is_outlier"].sum() == 1  # extreme for the small site
+
+
+def test_text_na_becomes_null_and_date_is_berlin_day():
+    raw = pd.DataFrame({
+        "counter_site_id": ["1"], "counter_site": ["x"], "domain_name": ["Stadt Mannheim"],
+        "channels_in": ["na"], "channels_out": ["na"], "channels_all": ["5846"],
+        "latitude": ["49.5"], "longitude": ["8.4"],
+        "iso_timestamp": ["2025-06-01T00:00:00+02:00"],      # = 31 May 22:00 UTC
+    })
+    out, _ = c.standardise_types.raw(raw)
+    assert out["bikes_in"].isna().all()                       # "na" -> NULL
+    assert out["bikes_total"].iloc[0] == 5846                 # text -> number
+    assert out["date"].iloc[0] == pd.Timestamp("2025-06-01")  # Berlin day, not the UTC day
+    assert out["city"].iloc[0] == "Mannheim"                  # "Stadt " removed
+
+
+def test_join_does_not_change_row_count():
+    counts = bike_rows([1.0, 2.0, 3.0])
+    sites = pd.DataFrame({"site_id": ["1"], "site_name": ["x"], "city": ["Heidelberg"]})
+    weather = pd.DataFrame({"date": counts["date"], "temp_mean_c": [1.0, 2.0, 3.0]})
+    out, _ = c.build_model_table.raw(counts, sites, weather)
+    assert len(out) == len(counts)
+
+
+def test_duplicate_site_key_stops_the_join():
+    counts = bike_rows([1.0])
+    sites = pd.DataFrame({"site_id": ["1", "1"], "site_name": ["x", "y"], "city": ["Heidelberg"] * 2})
+    weather = pd.DataFrame({"date": counts["date"], "temp_mean_c": [1.0]})
+    with pytest.raises(pd.errors.MergeError):
+        c.build_model_table.raw(counts, sites, weather)
+
+if not list(c.RAW_BIKE.glob("fahrradzaehler_tageswerten_*.csv")):
+        pytest.skip("raw data not downloaded")
