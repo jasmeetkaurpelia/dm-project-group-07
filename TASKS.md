@@ -35,12 +35,12 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 
 | # | Task | Owner | Status | Date |
 |---|---|---|---|---|
-| 2.1 | Profiling: rows, columns, data types, % missing, duplicates, min/max (`src/profiling.py`) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
-| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
-| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Jasmeet + Yash | Jasmeet ✅, Yash ⬜ | |
+| 2.1 | Profiling: rows, columns, data types, % missing, duplicates, min/max (`src/profiling.py`) | Jasmeet + Yash | Jasmeet ✅, Yash ✅ | |
+| 2.2 | Find the main issues: zero days (outages), -999 values, text-typed numbers, duplicate dates, IN/OUT/ALL double count | Jasmeet + Yash | Jasmeet ✅, Yash ✅ | |
+| 2.3 | Calculate the quality KPIs on raw data (completeness, validity, uniqueness, consistency) | Jasmeet + Yash | Jasmeet ✅, Yash ✅ | |
 | 2.4 | FAIR score of the original dataset (F, A, I, R, each scored) → `docs/fair_score.md` | Jasmeet + Keshav | Jasmeet ✅, Keshav ✅ |5 Nov |
 | 2.5 | Architecture sketch: source → raw → Tableau Prep / Python → processed → AI model (ETL) → `docs/architecture.png` | Jasmeet | ✅ | 3 Nov |
-| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ⬜, Vivek ✅, Shashank ⬜, Keshav ✅ |  |
+| 2.6 | Agree on the cleaning rules → `docs/cleaning_rules.md` (draft ready: read it and tick your name) | Everyone | Jasmeet ✅, Yash ✅, Vivek ✅, Shashank ⬜, Keshav ✅ |  |
 
 > ⚠️ Phase 3 starts only after 2.6 is done.
 
@@ -62,7 +62,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
 | 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
 | 3.14 | Cleaning log → `docs/cleaning_log_2025.md` (written by `cleaning.py`) | Vivek + Shashank | ⬜ | |
-| 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Jasmeet · review: Yash + Keshav  | Jasmeet ✅ (`docs/quality_before_after.md`): Yash review ⬜, Keshav ✅ (FAIR after)| |
+| 3.15 | Quality KPIs and FAIR score after cleaning (before vs after) | Jasmeet · review: Yash + Keshav  | Jasmeet ✅ (`docs/quality_before_after.md`): Yash review ✅, Keshav ✅ (FAIR after)| |
 
 ## Phase 4 — Presentation (Day 5–7)
 
@@ -70,14 +70,14 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 |---|---|---|---|---|
 | 4.1 | Slides 1–2: dataset, problem statement, architecture | Jasmeet | ✅ | |
 | 4.2 | Slide 3: FAIR | Keshav | ✅ | |
-| 4.3 | Slides 4–5: profiling | Yash | ⬜ | |
+| 4.3 | Slides 4–5: profiling | Yash | ✅ | |
 | 4.4 | Slides 6–11: Tableau Prep (full flow + main steps) | Vivek | ⬜ | |
 | 4.5 | Slides 12–13: reproducible pipeline | Shashank | ⬜ | |
 | 4.6 | Slide 14: governance | Keshav | ⬜ | |
 | 4.7 | Slide 15: conclusion (answer the problem statement + lessons learned) | Jasmeet | ✅ | |
 | 4.8 | Merge all slides into one deck (SRH template only) | Jasmeet | ⬜ | |
-| 4.9 | Rehearsal 1 with timer (target 14:30 min) | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
-| 4.10 | Rehearsal 2 + list of likely questions and answers | Everyone | Jasmeet ⬜, Yash ⬜, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
+| 4.9 | Rehearsal 1 with timer (target 14:30 min) | Everyone | Jasmeet ⬜, Yash ✅, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
+| 4.10 | Rehearsal 2 + list of likely questions and answers | Everyone | Jasmeet ⬜, Yash ✅, Vivek ⬜, Shashank ⬜, Keshav ⬜ | |
 | 4.11 | Export `tableau/flow.tflx` (packaged flow) | Vivek | ⬜ | |
 
 ## Phase 5 — Report + Submission (after the presentation)
