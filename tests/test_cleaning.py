@@ -142,6 +142,3 @@ def test_duplicate_site_key_stops_the_join():
     weather = pd.DataFrame({"date": counts["date"], "temp_mean_c": [1.0]})
     with pytest.raises(pd.errors.MergeError):
         c.build_model_table.raw(counts, sites, weather)
-
-if not list(c.RAW_BIKE.glob("fahrradzaehler_tageswerten_*.csv")):
-        pytest.skip("raw data not downloaded")
