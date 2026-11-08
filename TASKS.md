@@ -57,7 +57,7 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 3.7 | Python: `run_pipeline()` that calls all functions in order | Shashank | 🔄 draft by Jasmeet, Shashank to review | |
 | 3.8 | Python: tests in `tests/test_cleaning.py` (no duplicates, no -999, valid dates) | Shashank | 🔄 draft by Jasmeet, Shashank to run | |
 | 3.9 | Python: re-run on a new month (e.g. Jan 2026) and show the same result | Shashank | ⬜ | |
-| 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | 🔄 B1–B8 match Python; B9, weekly and sites/weather tables still differ |  |
+| 3.10 | Compare row counts between Tableau and Python (must match) | Vivek + Shashank | ✅ Tableau = Python: 10,874 rows, 35 missing days, 77 outages, 10 outliers, 1,580 weekly rows | |
 | 3.11 | Data dictionary → `docs/data_dictionary.md` (column, type, meaning, unit, example) | Keshav | ✅ | 5 Nov |
 | 3.12 | Metadata record → `docs/metadata.json` (title, source, licence, date, creator, keywords) | Keshav | ✅ | 5 Nov |
 | 3.13 | Governance: roles (owner, steward, users), lineage, AI risks | Keshav | ✅ | 5 Nov |
@@ -109,3 +109,4 @@ Status: ⬜ to do · 🔄 in progress · ✅ done · ⚠️ blocked (write the r
 | 7 Nov | Jasmeet | Full re-run on a second machine (Linux, other pandas version): 10/10 tests pass, same row counts, 4 of 5 outputs byte-identical. sites.csv differed in the 15th decimal of 3 coordinates → coordinates rounded to 6 decimals (~10 cm), now identical everywhere |
 | 7 Nov | Jasmeet | Tableau flow review sent to Vivek: rain threshold 0.1 → 1 mm (132 vs 94 rainy days), -999 cleaned columns not kept, stray ``` in 2 formulas, B9 missing days, sites output + valid_days missing |
 | 7 Nov | Jasmeet | Effect analysis on model_table (median of 29 sites): holiday −52 %, weekend −40 %, cold −35 %, heavy rain −23 %, rain −14 %; R² 0.57 (temp, rain, weekend, holiday). Found level shift at B38. RI. AUS (×130 from Sept) → documented in metadata + governance risk 10 |
+| 8 Nov | Jasmeet | 3.10 done: Tableau now adds the 35 missing site-days (New Rows calendar per site + left join), weekly totals use Monday weeks like Python (1,580), weekend check no longer depends on the computer's settings. Tableau = Python on all row counts |
