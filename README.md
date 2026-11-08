@@ -1,6 +1,6 @@
 # Bike Counts + Weather — FAIR, AI-ready Data Product
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24058368.svg)](https://doi.org/10.5281/zenodo.24058368)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24058367.svg)](https://doi.org/10.5281/zenodo.24058367)
 
 **Data Management — Group Project** · SRH University of Applied Sciences Heidelberg · Prof. Dr. Mehrdad Jalali
 
@@ -122,6 +122,6 @@ Checksums of every output file are in `docs/cleaning_log_2025.md`.
 
 ## How to cite
 
-Kaur, J., Chinnannavar, Y., Sawant, V., Kenkere Sridhar, S., & Sain, K. (2026). *Bike counts and weather, Heidelberg + Mannheim 2025: a FAIR, AI-ready data product* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24058368
+Kaur, J., Chinnannavar, Y., Sawant, V., Kenkere Sridhar, S., & Sain, K. (2026). *Bike counts and weather, Heidelberg + Mannheim 2025: a FAIR, AI-ready data product* [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24058367
 
 Please also credit the sources: MobiData BW / NVBW (Datenlizenz Deutschland – Namensnennung 2.0) and Deutscher Wetterdienst (CC BY 4.0).

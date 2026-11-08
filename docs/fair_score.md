@@ -15,7 +15,7 @@ Evidence from the [dataset page](https://mobidata-bw.de/en/dataset/eco-counter-f
 | Reusable | 3 / 8 | 7 / 8 | 7 / 8 |
 | **Total** | **18 / 30 (60 %)** | **27 / 30 (90 %)** | **29 / 30 (97 %)** |
 
-After-cleaning score by Keshav Sain, 6 Nov 2026 (task 3.15), checked against the files now in the repo. Final score 8 Nov 2026: DOI [10.5281/zenodo.24058368](https://doi.org/10.5281/zenodo.24058368) from a GitHub release archived on Zenodo → F1 and F4 now 2. The one point left is R1.3 (no community standard for bike count data exists).
+After-cleaning score by Keshav Sain, 6 Nov 2026 (task 3.15), checked against the files now in the repo. Final score 8 Nov 2026: DOI [10.5281/zenodo.24058367](https://doi.org/10.5281/zenodo.24058367) from a GitHub release archived on Zenodo → F1 and F4 now 2. The one point left is R1.3 (no community standard for bike count data exists).
 
 **Main finding:** the data is easy to find and download (F and A are strong). It is hard to reuse correctly (I and R are weak): every column is text, there are no descriptions or units, and nothing links the data to other datasets.
 
@@ -23,7 +23,7 @@ After-cleaning score by Keshav Sain, 6 Nov 2026 (task 3.15), checked against the
 
 | Principle | Question | Original | Evidence (original) | Ours | What we did |
 |---|---|---|---|---|---|
-| F1 | Unique, persistent identifier? | 1 | Portal ID (UUID) and URL, but no DOI | 2 | DOI 10.5281/zenodo.24058368 (Zenodo); was 1 with only the GitHub URL |
+| F1 | Unique, persistent identifier? | 1 | Portal ID (UUID) and URL, but no DOI | 2 | DOI 10.5281/zenodo.24058367 (Zenodo); was 1 with only the GitHub URL |
 | F2 | Rich metadata? | 1 | Title, description, author, maintainer, tags, spatial area, licence; no column descriptions | 2 | `docs/metadata.json` + data dictionary |
 | F3 | Metadata names the data's identifier? | 2 | Each resource has its own URL and ID in the metadata | 2 | File names + checksums in metadata and logs |
 | F4 | Registered in a searchable resource? | 2 | Harvested into GovData; tagged for Mobilithek | 2 | Registered on Zenodo (DataCite, searchable, indexed by OpenAIRE); was 1 with only GitHub |

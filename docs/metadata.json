@@ -1,10 +1,10 @@
 {
   "title": "Bike counts and weather, Heidelberg and Mannheim, 2025 (cleaned, AI-ready)",
   "description": "Daily bicycle counts from 30 Eco-Counter sites in Heidelberg and Mannheim for 2025, cleaned and joined with daily weather from DWD station 05906 Mannheim and calendar features (weekday, weekend, Baden-Wuerttemberg public holidays). Missing days and sensor outages are kept as NULL with flags, never as 0. Built for analysing and forecasting daily bike traffic.",
-  "identifier": "https://doi.org/10.5281/zenodo.24058368",
-  "doi": "10.5281/zenodo.24058368",
+  "identifier": "https://doi.org/10.5281/zenodo.24058367",
+  "doi": "10.5281/zenodo.24058367",
   "repository": "https://github.com/jasmeetkaurpelia/dm-project-group-07",
-  "version": "1.2 (2025 data, Tableau = Python, Jan 2026 re-run, DOI)",
+  "version": "1.1 (Zenodo release v1.1: 2025 data, Tableau = Python, Jan 2026 re-run)",
   "language": "en",
   "keywords": [
     "bicycle traffic",
