@@ -32,7 +32,7 @@ Task tracking: see **[TASKS.md](TASKS.md)**.
 
 **Scope:** Heidelberg + Mannheim · one year (2025) · daily values.
 **Download date:** 2 Nov 2026 (run `python src/download.py`, log in `data/raw/download_log.json`)
-**Size:** 10,839 rows for Heidelberg + Mannheim (30 counter sites, 2025), out of 57,341 rows for all of Baden-Württemberg.
+**Size:** 10,839 rows for Heidelberg + Mannheim (30 counter sites, 2025), out of 57,341 rows for all of Baden-Württemberg. After cleaning: 10,874 rows (35 missing days added as NULL).
 **Weather:** DWD station 05906 Mannheim, daily values, historical file (to 31 Dec 2025) + recent file (from 1 May 2025).
 
 **Attribution:** Bicycle count data: MobiData BW / NVBW, Datenlizenz Deutschland – Namensnennung 2.0. Weather data: Deutscher Wetterdienst (DWD), CC BY 4.0.
@@ -46,7 +46,7 @@ Task tracking: see **[TASKS.md](TASKS.md)**.
 ├── data/
 │   ├── raw/               original downloads — never edit
 │   └── processed/         cleaned output
-├── notebooks/             (optional demos)
+├── notebooks/             effect_analysis.ipynb (weather + calendar effects, answers the problem statement)
 ├── src/                   download.py, profiling.py, cleaning.py, quality_kpis.py
 ├── tests/                 test_cleaning.py
 ├── tableau/               flow.tflx (packaged flow), bike_cleaning_pipeline.tfl, prep_script.py (Script step)
@@ -73,7 +73,42 @@ python src/quality_kpis.py   # quality KPIs before vs after -> docs/quality_befo
 pytest                       # runs the tests
 ```
 
-Tableau Prep: open `tableau/flow.tflx` in Tableau Prep Builder. The Script step needs TabPy (`pip install tabpy`, then run `tabpy`). Before running, point the two Output steps to your own `data/processed/` folder.
+Re-run on a new month (shows the pipeline is reproducible, output goes to `data/processed/2026-01/`):
+
+```bash
+python src/download.py --year 2026 --months 1
+python src/cleaning.py --year 2026 --months 1
+```
+
+### Tableau Prep
+
+The flow `tableau/flow.tflx` is packaged (data included). Its Script step calls the same Python functions as `cleaning.py`, through TabPy.
+
+1. Start TabPy **from the repo folder** so it can import `src/cleaning.py` (Windows PowerShell shown):
+   ```powershell
+   pip install tabpy pandas numpy holidays
+   cd <path-to>/dm-project-group-07
+   $env:PYTHONPATH = "$PWD\src"          # Mac/Linux: export PYTHONPATH=$PWD/src
+   tabpy                                 # answer y; leave this window open
+   ```
+2. In Tableau Prep Builder: Help → Settings and Performance → Manage Analytics Extension Connection → TabPy, `localhost`, port `9004`.
+3. Open `tableau/flow.tflx`. Point the 3 Output steps to your own `data/processed/` folder, then **Run**.
+
+## Expected results (check your run)
+
+Python (`data/processed/2025/`) and Tableau (`data/processed/*.hyper`) must give the same numbers:
+
+| Check | Result |
+|---|---|
+| Rows Heidelberg + Mannheim (raw → filtered) | 57,341 → 10,839 |
+| Missing site-days added as NULL rows (`is_missing`) | 35 → **10,874 daily rows** |
+| Sensor outages (≥ 3 zero days) set to NULL (`is_outage`) | 77 |
+| Single zero days kept (`is_zero`) / outliers flagged (`is_outlier`) | 20 / 10 |
+| Weather days 2025 (245 duplicate days removed) | 365 |
+| Weekly rows (site × Monday week) | 1,580 |
+| Tests (`pytest`) | 15 passed |
+
+Checksums of every output file are in `docs/cleaning_log_2025.md`.
 
 ## How we work
 

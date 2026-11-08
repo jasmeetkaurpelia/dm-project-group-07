@@ -27,7 +27,7 @@ Source of each rule: issues found in `docs/profiling_report.md`.
 | B6 | Negative counts → NULL (row kept) | Invalid values | changes values | `invalid_counts_to_null` | **Clean step** → Calculated: `IF [bikes_total] < 0 THEN NULL ELSE [bikes_total] END` |
 | B7 | ≥ 3 zero days in a row = sensor outage → count NULL + flag `is_outage`; single zero days kept + flag `is_zero` | Zero-count days | changes values + flag | `flag_outages` | **Script step** calling the Python function (see below) |
 | B8 | Flag outliers above Q3 + 3 × IQR per site; value kept | Extreme days (events, errors) | flag only | `flag_outliers` | **Script step** (same script) |
-| B9 | Add missing days inside each site's active period (first → last date) with NULL count + flag `is_missing` | Missing site-days | adds rows | `complete_calendar` | **New Rows step** on `date`, grouped by `site_id` (or Script step) |
+| B9 | Add missing days inside each site's active period (first → last date) with NULL count + flag `is_missing` | Missing site-days | adds rows | `complete_calendar` | **Aggregate** (MIN/MAX date per site) → **New Rows** (date range, +1 day) → **left join** on `site_id` + date; `is_missing` = no count row found |
 | B10 | Split into **sites** (one row per site, median lat/long rounded to 6 decimals) and **daily_counts** (site + day) | Need two related tables, one fixed location per site | restructure | `split_tables` | **Aggregate step** by `site_id` → sites output; second branch → daily_counts output |
 
 ## Weather (DWD Mannheim, station 05906)
@@ -43,14 +43,14 @@ Source of each rule: issues found in `docs/profiling_report.md`.
 | # | Rule | Python function | Tableau Prep step |
 |---|---|---|---|
 | J1 | daily_counts **left join** sites on `site_id`, then **left join** weather on `date` (rows must not change) | `build_model_table` | **Join steps** (left), check row count stays the same |
-| J2 | Calendar features: `weekday`, `is_weekend`, `is_holiday` (Baden-Württemberg public holidays), `month` | `add_calendar_features` | **Clean step** calcs: `DATENAME('weekday',[date])`, `DATEPART('weekday',[date]) IN (1,7)`; holidays via a small holiday CSV joined on date |
-| J3 | Weekly totals per site (sum of counts, number of valid days, mean temperature, total rain); **total is NULL if no valid day** | `aggregate_weekly` | **Aggregate step** by `site_id`, ISO week |
+| J2 | Calendar features: `weekday`, `is_weekend`, `is_holiday` (Baden-Württemberg public holidays), `month` | `add_calendar_features` | **Clean step** calcs: `DATENAME('weekday',[date])`; weekend `DATEDIFF('day', #2024-12-30#, [date]) % 7 >= 5` (counted from a Monday, same on every computer); holidays: the 12 Baden-Württemberg dates of 2025 in one formula |
+| J3 | Weekly totals per site (sum of counts, number of valid days, mean temperature, total rain); **total is NULL if no valid day** | `aggregate_weekly` | **Aggregate step** by `site_id` + `week_start` = Monday of the week (`DATEADD('day', -(DATEDIFF('day', #2024-12-30#, [date]) % 7), [date])`), same weeks as Python's ISO week |
 
 ## Script step for B7 + B8 (Tableau Prep)
 
 Rules B7 and B8 compare a row with the rows before it, which is hard to build with normal Prep steps. Use a **Script step** that calls the same Python functions, so both tools give exactly the same result. This also shows "cleaning functions inside Tableau Prep's Script step".
 
-Needs TabPy: `pip install tabpy` → run `tabpy` → in Prep: Help → Settings and Performance → Manage Analytics Extension Connection → TabPy, localhost, port 9004.
+Needs TabPy, started **from the repo folder** so it can import `src/cleaning.py` (see README → Tableau Prep). In Prep: Help → Settings and Performance → Manage Analytics Extension Connection → TabPy, localhost, port 9004. The real script is `tableau/prep_script.py` (it finds `src/` itself and returns dates as text for TabPy); the block below is the short idea.
 
 ```python
 # tableau/prep_script.py  — Script step, function name: flag_rules
@@ -79,3 +79,4 @@ def get_output_schema():
 | 3 Nov 2026 | Jasmeet | First version, from profiling report |
 | 5 Nov 2026 | Keshav (found), Jasmeet (fixed) | J3: weekly `bikes_total` is NULL when `valid_days` = 0 (was 0). Found in governance review, test added |
 | 7 Nov 2026 | Jasmeet | B10: site coordinates rounded to 6 decimals (~10 cm) so the output is identical on every computer |
+| 8 Nov 2026 | Jasmeet | Tableau: B9 done (New Rows calendar per site + left join, 35 rows); J2 weekend and J3 weeks counted from a Monday. Tableau = Python: 10,874 daily rows, 1,580 weekly rows |
