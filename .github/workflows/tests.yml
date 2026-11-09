@@ -1,0 +1,31 @@
+# Runs on GitHub for every push and pull request:
+# 1) the 15 tests, 2) the full cleaning pipeline, 3) a check that the re-run
+# gives byte-identical outputs (same files, same SHA-256 checksums in the cleaning log).
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest -v
+
+      - name: Re-run the cleaning pipeline
+        run: python src/cleaning.py
+
+      - name: Check outputs are identical to the committed ones
+        run: git diff --exit-code --stat data/processed docs/cleaning_log_2025.md
