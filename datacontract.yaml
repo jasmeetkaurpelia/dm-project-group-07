@@ -1,0 +1,768 @@
+# Data contract for the Group 07 data product (Open Data Contract Standard, ODCS v3.2.0)
+# What every table promises: columns, types, keys, NULL rules and quality checks.
+# Check it against the data:  pip install datacontract-cli  ->  datacontract test datacontract.yaml
+
+apiVersion: v3.2.0
+kind: DataContract
+id: group07-bike-counts-weather
+name: Bike counts and weather, Heidelberg + Mannheim
+version: 1.1.0
+status: active
+domain: mobility
+dataProduct: "Bike counts + weather: FAIR, AI-ready data product (SRH Data Management, Group 07)"
+tags:
+  - bicycle counts
+  - weather
+  - Heidelberg
+  - Mannheim
+  - open data
+  - FAIR
+description:
+  purpose:
+    Daily bicycle counts for 30 counter sites in Heidelberg and Mannheim, joined with DWD daily weather and
+    calendar features, so that the effect of weather and calendar on bike traffic can be analysed and a forecasting
+    model can be trained.
+  usage:
+    Analysis and model training for city mobility planning (bike lanes, winter service, events). Filter or
+    mask rows with is_missing, is_outage or is_outlier before training. Cite the sources.
+  limitations:
+    "One weather station (Mannheim) for both cities. Only 2025 (re-runs on new months are supported).
+    The B38 counter pair swapped directions on 22 Sep 2025: flagged, not corrected. Unknown counts are NULL, never
+    0."
+  authoritativeDefinitions:
+    - type: businessDefinition
+      url: https://github.com/jasmeetkaurpelia/dm-project-group-07/blob/main/docs/data_dictionary.md
+      description: Data dictionary
+    - type: implementation
+      url: https://github.com/jasmeetkaurpelia/dm-project-group-07/blob/main/docs/cleaning_rules.md
+      description: The 16 cleaning rules (Python + Tableau Prep)
+authoritativeDefinitions:
+  - type: canonicalUrl
+    url: https://doi.org/10.5281/zenodo.24058367
+    description: DOI (all versions)
+  - type: implementation
+    url: https://github.com/jasmeetkaurpelia/dm-project-group-07
+    description: Code repository
+servers:
+  - server: local
+    type: local
+    environment: prod
+    description: Cleaned CSV files in the repository (data warehouse zone)
+    path: ./data/processed/2025/{model}.csv
+    format: csv
+schema:
+  - name: sites
+    physicalType: file
+    description: One row per counter site, with one fixed location (rule B10)
+    dataGranularityDescription: One row per counter site
+    properties:
+      - name: site_id
+        logicalType: integer
+        description: Unique ID of the counter site (Eco-Counter)
+        required: true
+        unique: true
+        primaryKey: true
+        primaryKeyPosition: 1
+        examples:
+          - 100012161
+      - name: site_name
+        logicalType: string
+        description: Name of the counting location
+        required: true
+        examples:
+          - Plöck
+      - name: city
+        logicalType: string
+        description: City of the site
+        required: true
+        examples:
+          - Heidelberg
+        quality:
+          - type: sql
+            description: Only Heidelberg and Mannheim (rule B1)
+            dimension: conformity
+            query: SELECT COUNT(*) FROM ${object} WHERE city NOT IN ('Heidelberg','Mannheim')
+            mustBe: 0
+      - name: latitude
+        logicalType: number
+        description: Latitude, median of all reported positions, rounded to 6 decimals
+        required: true
+        logicalTypeOptions:
+          minimum: 49.3
+          maximum: 49.6
+        examples:
+          - 49.40913
+        customProperties:
+          - property: unit
+            value: degrees (WGS 84)
+      - name: longitude
+        logicalType: number
+        description: Longitude, median of all reported positions, rounded to 6 decimals
+        required: true
+        logicalTypeOptions:
+          minimum: 8.3
+          maximum: 8.8
+        examples:
+          - 8.698543
+        customProperties:
+          - property: unit
+            value: degrees (WGS 84)
+      - name: counter_serial
+        logicalType: string
+        description: Serial number of the counting device
+        required: true
+        examples:
+          - Y2H22032496
+      - name: first_date
+        logicalType: date
+        description: First day with data in the period
+        required: true
+        logicalTypeOptions:
+          format: yyyy-MM-dd
+        examples:
+          - "2025-01-01"
+      - name: last_date
+        logicalType: date
+        description: Last day with data in the period
+        required: true
+        logicalTypeOptions:
+          format: yyyy-MM-dd
+        examples:
+          - "2025-12-31"
+    quality:
+      - type: library
+        metric: rowCount
+        description: At least one site
+        dimension: completeness
+        mustBeGreaterOrEqualTo: 1
+      - type: sql
+        description: first_date is not after last_date
+        dimension: consistency
+        query: SELECT COUNT(*) FROM ${object} WHERE first_date > last_date
+        mustBe: 0
+  - name: daily_counts
+    physicalType: file
+    description: Bike counts per site and day; unknown counts are NULL with a flag
+    dataGranularityDescription: One row per site and day, every day of each site's active period
+    properties:
+      - name: site_id
+        logicalType: integer
+        description: Unique ID of the counter site (Eco-Counter)
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 1
+        examples:
+          - 100012161
+        relationships:
+          - type: foreignKey
+            to: sites.site_id
+      - name: date
+        logicalType: date
+        description: Day of the count (Europe/Berlin)
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 2
+        logicalTypeOptions:
+          format: yyyy-MM-dd
+        examples:
+          - "2025-01-01"
+      - name: bikes_in
+        logicalType: integer
+        description:
+          Bikes counted in direction 'in'. NULL if the counter has no direction, or the day is missing or
+          an outage
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 385
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: bikes_out
+        logicalType: integer
+        description: Bikes counted in direction 'out'. NULL as for bikes_in
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 453
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: bikes_total
+        logicalType: integer
+        description: All bikes counted that day. NULL if the day is missing or a sensor outage, never 0 for unknown
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 838
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: is_missing
+        logicalType: boolean
+        description: True = the day had no data and was added as a NULL row (rule B9)
+        required: true
+        examples:
+          - false
+      - name: is_outage
+        logicalType: boolean
+        description: True = part of 3 or more zero days in a row; count set to NULL (rule B7)
+        required: true
+        examples:
+          - false
+      - name: is_zero
+        logicalType: boolean
+        description: True = single zero day (fewer than 3 in a row); value 0 kept (rule B7)
+        required: true
+        examples:
+          - false
+      - name: is_outlier
+        logicalType: boolean
+        description: True = count above Q3 + 3 x IQR of that site; value kept (rule B8)
+        required: true
+        examples:
+          - false
+    quality:
+      - type: library
+        metric: rowCount
+        description: At least 1,000 rows (project requirement)
+        dimension: completeness
+        mustBeGreaterOrEqualTo: 1000
+      - type: sql
+        description: One row per site and day (rule B5)
+        dimension: uniqueness
+        query: SELECT COUNT(*) FROM (SELECT site_id, date FROM ${object} GROUP BY site_id, date HAVING COUNT(*) > 1)
+        mustBe: 0
+      - type: sql
+        description: Missing days and outages are NULL, never 0 (rules B7, B9)
+        dimension: accuracy
+        query: SELECT COUNT(*) FROM ${object} WHERE (is_missing OR is_outage) AND bikes_total IS NOT NULL
+        mustBe: 0
+      - type: sql
+        description: A single zero day is really 0 (rule B7)
+        dimension: consistency
+        query: SELECT COUNT(*) FROM ${object} WHERE is_zero AND bikes_total <> 0
+        mustBe: 0
+      - type: sql
+        description: IN + OUT = ALL where both directions exist
+        dimension: consistency
+        query:
+          SELECT COUNT(*) FROM ${object} WHERE bikes_in IS NOT NULL AND bikes_out IS NOT NULL AND bikes_in + bikes_out
+          <> bikes_total
+        mustBe: 0
+  - name: weather_daily
+    physicalType: file
+    description: DWD daily weather, station 05906 Mannheim; -999 read as NULL
+    dataGranularityDescription: One row per day
+    properties:
+      - name: date
+        logicalType: date
+        description: Day of the measurement
+        required: true
+        unique: true
+        primaryKey: true
+        primaryKeyPosition: 1
+        logicalTypeOptions:
+          format: yyyy-MM-dd
+        examples:
+          - "2025-01-01"
+      - name: temp_mean_c
+        logicalType: number
+        description: Daily mean air temperature (DWD TMK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - 3.8
+        customProperties:
+          - property: unit
+            value: °C
+      - name: temp_max_c
+        logicalType: number
+        description: Daily maximum air temperature (DWD TXK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - 9.0
+        customProperties:
+          - property: unit
+            value: °C
+      - name: temp_min_c
+        logicalType: number
+        description: Daily minimum air temperature (DWD TNK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - -0.9
+        customProperties:
+          - property: unit
+            value: °C
+      - name: precip_mm
+        logicalType: number
+        description: Daily precipitation (DWD RSK)
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 1.0
+        customProperties:
+          - property: unit
+            value: mm
+      - name: snow_depth_cm
+        logicalType: integer
+        description: Snow depth (DWD SHK_TAG)
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 0
+        customProperties:
+          - property: unit
+            value: cm
+      - name: sunshine_h
+        logicalType: number
+        description: Sunshine duration (DWD SDK)
+        logicalTypeOptions:
+          minimum: 0
+          maximum: 24
+        examples:
+          - 4.5
+        customProperties:
+          - property: unit
+            value: hours
+      - name: wind_mean_ms
+        logicalType: number
+        description: Daily mean wind speed (DWD FM). NULL where DWD reported -999
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 4.7
+        customProperties:
+          - property: unit
+            value: m/s
+      - name: humidity_pct
+        logicalType: number
+        description: Daily mean relative humidity (DWD UPM). NULL where DWD reported -999
+        logicalTypeOptions:
+          minimum: 0
+          maximum: 100
+        examples:
+          - 69.0
+        customProperties:
+          - property: unit
+            value: "%"
+      - name: is_rainy
+        logicalType: boolean
+        description: True = precipitation of 1.0 mm or more (rule W3)
+        required: true
+        examples:
+          - true
+    quality:
+      - type: library
+        metric: rowCount
+        description: At least one month of days
+        dimension: completeness
+        mustBeGreaterOrEqualTo: 28
+      - type: sql
+        description: No DWD missing-value code -999 left (rule W3)
+        dimension: conformity
+        query:
+          SELECT COUNT(*) FROM ${object} WHERE temp_mean_c = -999 OR precip_mm = -999 OR wind_mean_ms = -999 OR
+          humidity_pct = -999
+        mustBe: 0
+  - name: model_table
+    physicalType: file
+    description: "AI-ready table: daily counts + site + weather + calendar features (rules J1, J2)"
+    dataGranularityDescription: One row per site and day, same rows as daily_counts
+    properties:
+      - name: site_id
+        logicalType: integer
+        description: Unique ID of the counter site (Eco-Counter)
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 1
+        examples:
+          - 100012161
+        relationships:
+          - type: foreignKey
+            to: sites.site_id
+      - name: date
+        logicalType: date
+        description: Day of the count
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 2
+        logicalTypeOptions:
+          format: yyyy-MM-dd
+        examples:
+          - "2025-01-01"
+      - name: bikes_in
+        logicalType: integer
+        description:
+          Bikes counted in direction 'in'. NULL if the counter has no direction, or the day is missing or
+          an outage
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 385
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: bikes_out
+        logicalType: integer
+        description: Bikes counted in direction 'out'. NULL as for bikes_in
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 453
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: bikes_total
+        logicalType: integer
+        description: All bikes counted that day. NULL if the day is missing or a sensor outage, never 0 for unknown
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 838
+        customProperties:
+          - property: unit
+            value: bikes per day
+      - name: is_missing
+        logicalType: boolean
+        description: True = the day had no data and was added as a NULL row (rule B9)
+        required: true
+        examples:
+          - false
+      - name: is_outage
+        logicalType: boolean
+        description: True = part of 3 or more zero days in a row; count set to NULL (rule B7)
+        required: true
+        examples:
+          - false
+      - name: is_zero
+        logicalType: boolean
+        description: True = single zero day (fewer than 3 in a row); value 0 kept (rule B7)
+        required: true
+        examples:
+          - false
+      - name: is_outlier
+        logicalType: boolean
+        description: True = count above Q3 + 3 x IQR of that site; value kept (rule B8)
+        required: true
+        examples:
+          - false
+      - name: site_name
+        logicalType: string
+        description: Name of the counting location
+        required: true
+        examples:
+          - Plöck
+      - name: city
+        logicalType: string
+        description: City of the site
+        required: true
+        examples:
+          - Heidelberg
+        quality:
+          - type: sql
+            description: Only Heidelberg and Mannheim (rule B1)
+            dimension: conformity
+            query: SELECT COUNT(*) FROM ${object} WHERE city NOT IN ('Heidelberg','Mannheim')
+            mustBe: 0
+      - name: temp_mean_c
+        logicalType: number
+        description: Daily mean air temperature (DWD TMK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - 3.8
+        customProperties:
+          - property: unit
+            value: °C
+      - name: temp_max_c
+        logicalType: number
+        description: Daily maximum air temperature (DWD TXK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - 9.0
+        customProperties:
+          - property: unit
+            value: °C
+      - name: temp_min_c
+        logicalType: number
+        description: Daily minimum air temperature (DWD TNK)
+        logicalTypeOptions:
+          minimum: -40
+          maximum: 50
+        examples:
+          - -0.9
+        customProperties:
+          - property: unit
+            value: °C
+      - name: precip_mm
+        logicalType: number
+        description: Daily precipitation (DWD RSK)
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 1.0
+        customProperties:
+          - property: unit
+            value: mm
+      - name: snow_depth_cm
+        logicalType: integer
+        description: Snow depth (DWD SHK_TAG)
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 0
+        customProperties:
+          - property: unit
+            value: cm
+      - name: sunshine_h
+        logicalType: number
+        description: Sunshine duration (DWD SDK)
+        logicalTypeOptions:
+          minimum: 0
+          maximum: 24
+        examples:
+          - 4.5
+        customProperties:
+          - property: unit
+            value: hours
+      - name: wind_mean_ms
+        logicalType: number
+        description: Daily mean wind speed (DWD FM). NULL where DWD reported -999
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 4.7
+        customProperties:
+          - property: unit
+            value: m/s
+      - name: humidity_pct
+        logicalType: number
+        description: Daily mean relative humidity (DWD UPM). NULL where DWD reported -999
+        logicalTypeOptions:
+          minimum: 0
+          maximum: 100
+        examples:
+          - 69.0
+        customProperties:
+          - property: unit
+            value: "%"
+      - name: is_rainy
+        logicalType: boolean
+        description: True = precipitation of 1.0 mm or more (rule W3)
+        required: true
+        examples:
+          - true
+      - name: weekday
+        logicalType: string
+        description: Name of the weekday
+        required: true
+        examples:
+          - Wednesday
+      - name: is_weekend
+        logicalType: boolean
+        description: True = Saturday or Sunday
+        required: true
+        examples:
+          - false
+      - name: is_holiday
+        logicalType: boolean
+        description: True = public holiday in Baden-Württemberg
+        required: true
+        examples:
+          - true
+      - name: month
+        logicalType: integer
+        description: Month of the year
+        required: true
+        logicalTypeOptions:
+          minimum: 1
+          maximum: 12
+        examples:
+          - 1
+    quality:
+      - type: library
+        metric: rowCount
+        description: At least 1,000 rows
+        dimension: completeness
+        mustBeGreaterOrEqualTo: 1000
+      - type: sql
+        description: One row per site and day
+        dimension: uniqueness
+        query: SELECT COUNT(*) FROM (SELECT site_id, date FROM ${object} GROUP BY site_id, date HAVING COUNT(*) > 1)
+        mustBe: 0
+      - type: sql
+        description: Every row has weather (left join on date, rule J1)
+        dimension: completeness
+        query: SELECT COUNT(*) FROM ${object} WHERE temp_mean_c IS NULL
+        mustBe: 0
+  - name: weekly_counts
+    physicalType: file
+    description: Weekly totals per site (ISO weeks, Monday to Sunday, rule J3)
+    dataGranularityDescription: One row per site and ISO week
+    properties:
+      - name: site_id
+        logicalType: integer
+        description: Unique ID of the counter site (Eco-Counter)
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 1
+        examples:
+          - 100012161
+        relationships:
+          - type: foreignKey
+            to: sites.site_id
+      - name: site_name
+        logicalType: string
+        description: Name of the counting location
+        required: true
+        examples:
+          - Plöck
+      - name: city
+        logicalType: string
+        description: City of the site
+        required: true
+        examples:
+          - Heidelberg
+        quality:
+          - type: sql
+            description: Only Heidelberg and Mannheim (rule B1)
+            dimension: conformity
+            query: SELECT COUNT(*) FROM ${object} WHERE city NOT IN ('Heidelberg','Mannheim')
+            mustBe: 0
+      - name: iso_year
+        logicalType: integer
+        description: ISO year of the week (29-31 Dec 2025 belong to week 1 of 2026)
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 2
+        examples:
+          - 2025
+      - name: iso_week
+        logicalType: integer
+        description: ISO week number
+        required: true
+        primaryKey: true
+        primaryKeyPosition: 3
+        logicalTypeOptions:
+          minimum: 1
+          maximum: 53
+        examples:
+          - 1
+      - name: bikes_total
+        logicalType: integer
+        description: Sum of valid daily counts in the week; NULL if valid_days = 0
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 6412
+        customProperties:
+          - property: unit
+            value: bikes per week
+      - name: valid_days
+        logicalType: integer
+        description: Number of days with a valid count
+        required: true
+        logicalTypeOptions:
+          minimum: 0
+          maximum: 7
+        examples:
+          - 7
+        customProperties:
+          - property: unit
+            value: days
+      - name: temp_mean_c
+        logicalType: number
+        description: Mean of the daily mean temperatures
+        examples:
+          - 2.88
+        customProperties:
+          - property: unit
+            value: °C
+      - name: precip_mm
+        logicalType: number
+        description: Total precipitation in the week
+        logicalTypeOptions:
+          minimum: 0
+        examples:
+          - 22.1
+        customProperties:
+          - property: unit
+            value: mm
+    quality:
+      - type: library
+        metric: rowCount
+        description: At least one week
+        dimension: completeness
+        mustBeGreaterOrEqualTo: 1
+      - type: sql
+        description: A week with no valid day has a NULL total, not 0 (rule J3)
+        dimension: accuracy
+        query: SELECT COUNT(*) FROM ${object} WHERE valid_days = 0 AND bikes_total IS NOT NULL
+        mustBe: 0
+      - type: sql
+        description: One row per site and week
+        dimension: uniqueness
+        query:
+          SELECT COUNT(*) FROM (SELECT site_id, iso_year, iso_week FROM ${object} GROUP BY site_id, iso_year, iso_week
+          HAVING COUNT(*) > 1)
+        mustBe: 0
+team:
+  name: Group 07, SRH University of Applied Sciences Heidelberg
+  members:
+    - username: jasmeet.kaur
+      name: Jasmeet Kaur
+      role: Data owner (product), group lead
+    - username: keshav.sain
+      name: Keshav Sain
+      role: Data steward
+    - username: shashank.kenkere-sridhar
+      name: Shashank Kenkere Sridhar
+      role: Data engineer (Python pipeline, tests)
+    - username: vivek.sawant
+      name: Vivek Sawant
+      role: Data engineer (Tableau Prep flow)
+    - username: yash.chinnannavar
+      name: Yash Chinnannavar
+      role: Data quality analyst
+roles:
+  - role: data_consumer
+    access: read
+    description: "City mobility departments and analysts: read the cleaned tables, respect the licences and limitations"
+  - role: data_engineer
+    access: write
+    description: Changes go through a branch and a pull request; main is protected
+    firstLevelApprovers: Data owner (product)
+support:
+  - channel: github-issues
+    url: https://github.com/jasmeetkaurpelia/dm-project-group-07/issues
+    tool: ticket
+    scope: issues
+    description: Report data problems
+slaProperties:
+  - property: frequency
+    value: 1
+    unit: m
+    description: Can be re-run for each new month with one command (download.py + cleaning.py)
+  - property: retention
+    value: forever
+    description: Every version archived on Zenodo with a DOI
+  - property: timeOfAvailability
+    value: 2025-01-01 to 2025-12-31
+    description: Period covered by this version
+customProperties:
+  - property: licence_bike_counts
+    value: Datenlizenz Deutschland – Namensnennung 2.0 (MobiData BW / NVBW)
+  - property: licence_weather
+    value: CC BY 4.0 (Deutscher Wetterdienst)
+  - property: null_policy
+    value: Unknown is NULL, never 0; problem rows are flagged, not deleted
+contractCreatedTs: "2026-11-09T10:00:00+01:00"

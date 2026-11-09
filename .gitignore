@@ -9,3 +9,5 @@ tabpy_log.log*
 # TabPy logs
 tabpy_log*
 *.log
+
+hyperd*.log

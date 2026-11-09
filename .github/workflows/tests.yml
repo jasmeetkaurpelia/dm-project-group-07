@@ -1,6 +1,7 @@
 # Runs on GitHub for every push and pull request:
 # 1) the 15 tests, 2) the full cleaning pipeline, 3) a check that the re-run
-# gives byte-identical outputs (same files, same SHA-256 checksums in the cleaning log).
+# gives byte-identical outputs (same files, same SHA-256 checksums in the cleaning log),
+# 4) the data contract (datacontract.yaml) against the cleaned tables.
 name: tests
 
 on:
@@ -29,3 +30,8 @@ jobs:
 
       - name: Check outputs are identical to the committed ones
         run: git diff --exit-code --stat data/processed docs/cleaning_log_2025.md
+
+      - name: Check the data contract
+        run: |
+          pip install "datacontract-cli[duckdb]==1.2.9"
+          datacontract test datacontract.yaml
