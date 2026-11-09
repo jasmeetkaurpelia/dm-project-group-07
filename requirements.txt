@@ -10,5 +10,8 @@ jupyter>=1.0
 # German public holidays (calculated field)
 holidays>=0.50
 
+# Read Tableau .hyper outputs (compare_tableau_python.py)
+tableauhyperapi
+
 # Tests
 pytest>=8.0
